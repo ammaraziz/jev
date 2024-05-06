@@ -1,0 +1,21 @@
+from snakemake.utils import min_version
+from pathlib import Path
+
+min_version("7.7.0")
+configfile: "config/config.yaml"
+GENOTYPES = ['1', '2', '3', '4', '5']
+
+OUTDIR = Path("output")
+RESOURCES = Path("resources")
+
+rule all:
+    input:
+        OUTDIR / "data" / "sequences.ndjson",
+        OUTDIR / "results" / "metadata_all.tsv",
+        OUTDIR / "results" / "sequences_all.fasta",
+        OUTDIR / "results" / "split.status.txt",
+        expand(OUTDIR / "results" / "by_genotype" / "sequences_{genotype}.fasta", genotype=GENOTYPES)
+
+include: "rules/fetch_from_ncbi.smk"
+include: "rules/curate.smk"
+include: "rules/split_genotypes.smk"
