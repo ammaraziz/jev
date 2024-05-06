@@ -1,0 +1,189 @@
+augur refine is using TreeTime version 0.11.3
+
+2.66	TreeTime.reroot: with method or node: least-squares
+
+2.66	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+
+3.01	TreeTime.reroot: with method or node: least-squares
+
+3.01	TreeTime.reroot: rerooting will ignore covariance and shared ancestry.
+pruning leaf  AY184212
+pruning leaf  AF217620
+pruning leaf  GQ902060
+pruning leaf  GQ902059
+pruning leaf  GQ902062
+pruning leaf  GQ902061
+pruning leaf  JN381852
+pruning leaf  JN381850
+pruning leaf  AF045551
+pruning leaf  JN381851
+pruning leaf  JN381849
+pruning leaf  JN381847
+pruning leaf  AY316157
+pruning leaf  JN381848
+pruning leaf  MT859416
+pruning leaf  AB241119
+pruning leaf  JN381846
+pruning leaf  AB051292
+pruning leaf  JN381845
+pruning leaf  JN381844
+pruning leaf  JN381843
+pruning leaf  JN381841
+pruning leaf  JN381842
+pruning leaf  AB241118
+pruning leaf  JN381839
+pruning leaf  JN381840
+pruning leaf  MZ540901
+pruning leaf  JN381838
+pruning leaf  JN381837
+pruning leaf  JN381835
+pruning leaf  JN381836
+pruning leaf  JN381830
+pruning leaf  JN381831
+pruning leaf  JN381832
+pruning leaf  JN381833
+pruning leaf  JN381834
+pruning leaf  AF080251
+pruning leaf  OK257213
+pruning leaf  OK257214
+pruning leaf  OK257215
+pruning leaf  KT239164
+pruning leaf  JN381868
+pruning leaf  L48961
+pruning leaf  L78128
+pruning leaf  KY885009
+pruning leaf  HE861351
+pruning leaf  EF571853
+pruning leaf  JN381866
+pruning leaf  JN381867
+pruning leaf  JN381854
+pruning leaf  U47032
+pruning leaf  JN381853
+pruning leaf  AY849939
+pruning leaf  KR265316
+pruning leaf  EF107523
+pruning leaf  JN381864
+pruning leaf  JN381863
+pruning leaf  JN381862
+pruning leaf  JN381861
+pruning leaf  JN381860
+pruning leaf  JN381859
+pruning leaf  JN381858
+pruning leaf  JN381856
+pruning leaf  JN381857
+pruning leaf  JN381855
+pruning leaf  AF098735
+pruning leaf  AF098737
+pruning leaf  AF098736
+pruning leaf  DD367828
+pruning leaf  AY508813
+pruning leaf  DD367827
+pruning leaf  LY683280
+pruning leaf  AY508812
+pruning leaf  AF069076
+pruning leaf  KF907505
+pruning leaf  AF014161
+pruning leaf  AF014160
+pruning leaf  AB196925
+pruning leaf  AB196926
+pruning leaf  AB196923
+pruning leaf  AF486638
+pruning leaf  AB196924
+pruning leaf  AY303792
+pruning leaf  AY303791
+pruning leaf  AF254453
+pruning leaf  AF254452
+pruning leaf  MZ540902
+pruning leaf  GQ918133
+pruning leaf  JN381865
+pruning leaf  JN381871
+pruning leaf  GQ902063
+pruning leaf  AF075723
+pruning leaf  JN381872
+pruning leaf  JN381873
+pruning leaf  GQ199609
+pruning leaf  AY585243
+pruning leaf  DI075091
+pruning leaf  DD298237
+pruning leaf  DD298243
+pruning leaf  DI085220
+pruning leaf  AY585242
+pruning leaf  JN381869
+pruning leaf  EF543861
+pruning leaf  M18370
+pruning leaf  AY303797
+pruning leaf  AY303796
+pruning leaf  AY303798
+pruning leaf  AY303795
+pruning leaf  AF221499
+pruning leaf  AF221500
+pruning leaf  AY303794
+pruning leaf  AY303793
+pruning leaf  JN381870
+pruning leaf  KU323483
+pruning leaf  MT764731
+pruning leaf  KX254415
+pruning leaf  D90194
+pruning leaf  MH258848
+pruning leaf  LP837640
+pruning leaf  LP837226
+pruning leaf  LP981863
+pruning leaf  KC517497
+pruning leaf  U14163
+pruning leaf  M55506
+pruning leaf  U15763
+pruning leaf  MT764733
+pruning leaf  MT764730
+pruning leaf  AF416457
+pruning leaf  MT764729
+pruning leaf  D90195
+pruning leaf  MF326270
+pruning leaf  KX254416
+pruning leaf  KX254417
+pruning leaf  MT764732
+pruning leaf  MT764728
+pruning leaf  MH258851
+pruning leaf  MH258852
+pruning leaf  MH258853
+pruning leaf  MH258849
+pruning leaf  LP837641
+pruning leaf  LP837227
+pruning leaf  LP981864
+pruning leaf  MH258850
+pruning leaf  LP837228
+pruning leaf  AF315119
+pruning leaf  LP981865
+pruning leaf  LP837642
+
+7.38	TreeTime.reroot: with method or node: least-squares
+
+7.38	TreeTime.reroot: rerooting will account for covariance and shared ancestry.
+
+9.34	###TreeTime.run: INITIAL ROUND
+
+23.83	TreeTime.reroot: with method or node: least-squares
+
+23.83	TreeTime.reroot: rerooting will account for covariance and shared
+     	ancestry.
+
+24.06	###TreeTime.run: rerunning timetree after rerooting
+
+40.28	###TreeTime.run: ITERATION 1 out of 2 iterations
+
+40.97	DEPRECATION WARNING. TreeTime.resolve_polytomies: You are resolving
+     	polytomies using the old 'greedy' mode. This is not well suited for large
+     	polytomies. Stochastic resolution will become the default in future
+     	versions. To switch now, rerun with the flag `--stochastic-resolve`. To
+     	keep using the greedy method in the future, run with `--greedy-resolve`
+
+60.48	###TreeTime.run: ITERATION 2 out of 2 iterations
+
+211.08	###TreeTime.run: FINAL ROUND - confidence estimation via marginal
+      	reconstruction
+
+Inferred a time resolved phylogeny using TreeTime:
+	Sagulenko et al. TreeTime: Maximum-likelihood phylodynamic analysis
+	Virus Evolution, vol 4, https://academic.oup.com/ve/article/4/1/vex042/4794731
+
+updated tree written to output/tree/tree.refined.nwk
+node attributes written to output/nodedata/branch-lengths.json

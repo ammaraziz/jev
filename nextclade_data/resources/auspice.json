@@ -1,0 +1,42 @@
+{
+    "title": "JEV Genotyping",
+    "maintainers": [
+      {"name": "Ammar Aziz"}
+    ],
+    "colorings": [
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Date",
+        "type": "continuous"
+      },
+      {
+        "key": "country",
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "region",
+        "title": "Region",
+        "type": "categorical"
+      },
+      {
+        "key": "clade_membership",
+        "title": "JEV_Genotype",
+        "type": "categorical"
+      }
+    ],
+    "geo_resolutions": [
+      "country",
+      "region"
+    ],
+    "filters": [
+      "country",
+      "region",
+      "author"
+    ]
+  }
