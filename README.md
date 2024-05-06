@@ -2,9 +2,10 @@
 
 This repository contains 3 workflows for the analysis of JEV virus data:
 
-- [`ingest/`](./ingest) - Download data from GenBank, clean and curate it
-- [`phylogenetic/`](./phylogenetic) - Make phylogenetic trees for each genotype
-- [`nextclade_data/`](./nextclade_data) - Create tree.json for nextclade data 
+1. [`ingest/`](./ingest) - Download data from GenBank, clean and curate it
+2. [`nextclade_data/`](./nextclade_data) - Create tree.json for nextclade data 
+3. [`phylogenetic/`](./phylogenetic) - Make phylogenetic trees for each genotype
+
 
 Each folder contains a README.md with more information.
 
