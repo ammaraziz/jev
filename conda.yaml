@@ -1,0 +1,11 @@
+name: jev-inp
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - nextclade=3.3.0
+  - seqkit
+  - csvtk
+  - augur=24.0
+  - tsv-utils
+  - zstd
