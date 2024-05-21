@@ -14,7 +14,7 @@ rule all:
         OUTDIR / "results" / "metadata_all.tsv",
         OUTDIR / "results" / "sequences_all.fasta",
         OUTDIR / "results" / "split.status.txt",
-        expand(OUTDIR / "results" / "by_genotype" / "sequences_{genotype}.fasta", genotype=GENOTYPES)
+        expand(OUTDIR / "results" / "by_genotype" / "sequences_gt{genotype}.fasta", genotype=GENOTYPES)
 
 include: "rules/fetch_from_ncbi.smk"
 include: "rules/curate.smk"

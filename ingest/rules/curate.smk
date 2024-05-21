@@ -21,7 +21,6 @@ rule fetch_general_geolocation_rules:
     curl {params.geolocation_rules_url} > {output.general_geolocation_rules}
     """
 
-
 rule concat_geolocation_rules:
     input:
         general_geolocation_rules=OUTDIR / "data" / "general-geolocation-rules.tsv",
@@ -32,13 +31,11 @@ rule concat_geolocation_rules:
     cat {input.general_geolocation_rules} {input.local_geolocation_rules} >> {output.all_geolocation_rules}
     """
 
-
 def format_field_map(field_map: dict[str, str]) -> str:
     """
     Format dict to `"key1"="value1" "key2"="value2"...` for use in shell commands.
     """
     return " ".join([f'"{key}"="{value}"' for key, value in field_map.items()])
-
 
 rule curate:
     input:
@@ -51,6 +48,7 @@ rule curate:
     log: OUTDIR / "logs" / "curate.txt",
     params:
         field_map=format_field_map(config["curate"]["field_map"]),
+        field_map_austrakka=format_field_map(config["curate"]["austrakka_rename"]),
         strain_regex=config["curate"]["strain_regex"],
         strain_backup_fields=config["curate"]["strain_backup_fields"],
         date_fields=config["curate"]["date_fields"],
@@ -90,6 +88,8 @@ rule curate:
         | ./vendored/merge-user-metadata \
             --annotations {input.annotations} \
             --id-field {params.annotations_id} \
+        | ./vendored/transform-field-names \
+            --field-map {params.field_map_austrakka} \
         | ./bin/ndjson-to-tsv-and-fasta \
             --metadata-columns {params.metadata_columns} \
             --metadata {output.metadata} \

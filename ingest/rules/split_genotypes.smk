@@ -12,19 +12,17 @@ rule genotype:
     message: "Running Nextclade"
     input:
         sequences=OUTDIR / "results" / "sequences_all.fasta",
-        dataset="../nextclade_data/",
+        dataset="resources/nc_dataset/",
     output:
         results=OUTDIR / "data" / "nextclade_results" / "nextclade.tsv",
     threads: 4
     params:
-        min_length=config["nextclade"]["min_length"],
         min_seed_cover=config["nextclade"]["min_seed_cover"],
     shell:"""
     nextclade run \
         --input-dataset {input.dataset} \
         --jobs {threads} \
         --output-tsv {output.results} \
-        --min-length {params.min_length} \
         --min-seed-cover {params.min_seed_cover} \
         --silent \
         {input.sequences}
@@ -36,7 +34,7 @@ rule append_nextclade_columns:
         metadata=OUTDIR / "results" / "metadata_all.tsv",
         nextclade_results=rules.genotype.output.results,
     output:
-        metadata=OUTDIR / "results" / "metadata_nc.tsv",
+        metadata=OUTDIR / "results" / "metadata_final.tsv",
     params:
         id_field=config["curate"]["id_field"],
         nextclade_fields=config["nextclade"]["nextclade_fields"],
@@ -60,18 +58,21 @@ rule append_nextclade_columns:
 rule split_metadata_by_genotype:
     message: "Split metadata by genotype"
     input:
-        metadata=rules.append_nextclade_columns.output.metadata_final
+        metadata=rules.append_nextclade_columns.output.metadata
     output:
         status = temp(OUTDIR / "results" / "split.status.txt")
     params:
         nextclade_clade_column="clade",
         split_out_directory=OUTDIR / "results" / "by_genotype",
-        genotype_metadata=OUTDIR / "results" / "metadata_jev{genotype}.tsv",
+        genotype_metadata=OUTDIR / "results" / "metadata_gt{genotype}.tsv",
+        data_loc = OUTDIR / "results" / "by_genotype"
     shell:"""
     csvtk -t split \
         {input.metadata} \
-        -f {params.nextclade_clade_column} \
+        --fields {params.nextclade_clade_column} \
         --out-file {params.split_out_directory}
+    
+    for f in {params.data_loc}/*.tsv; do mv $f ${{f/_final-/_gt}}; done
 
     touch {output.status}
     """
@@ -84,11 +85,11 @@ rule split_sequences_by_genotype:
         metadata = OUTDIR / "results" / "metadata_final.tsv",
         sequences = OUTDIR / "results" / "sequences_all.fasta"
     output:
-        sequences = OUTDIR / "results" / "by_genotype" / "sequences_{genotype}.fasta"
+        sequences = OUTDIR / "results" / "by_genotype" / "sequences_gt{genotype}.fasta"
     params:
-        id_field=config["curate"]["id_field"],
+        id_field="Seq_ID",
         filter_by = lambda w: "clade=='" + w.genotype + "'"
-    log: OUTDIR / "log" / "augur.{genotype}.log.txt"
+    log: OUTDIR / "logs" / "augur.{genotype}.log.txt"
     shell:"""
     augur filter \
         --sequences {input.sequences} \

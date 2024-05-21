@@ -1,5 +1,5 @@
 # Sources of sequences to include in the ingest run
-sources: ['genbank']
+sources: ['genbank'] # , 'austrakka']
 # Pathogen NCBI Taxonomy ID
 ncbi_taxon_id: '11072'
 # The list of NCBI Datasets fields to include from NCBI Datasets output
@@ -23,7 +23,22 @@ ncbi_datasets_fields:
   - submitter-names
   - submitter-affiliation
 
-# Params for the curate rule
+# The list of Austrakka Datasets fields to include from 'austrakka metadata list' output
+austrakka_datasets_ndjson:
+  - Seq_ID
+  - Owner_group
+  - Country
+  - Jurisdiction
+  - Date_coll
+  - Host
+  - Species
+  - Sex
+  - Age_group
+  - Date_onset
+  - Location_of_acquisition
+  - Postcode
+
+# Params for the curate rule for ncbi
 curate:
   # NCBI Fields to rename to Nextstrain field names.
   # This is the first step in the pipeline, so any references to field names
@@ -44,6 +59,12 @@ curate:
     sra-accs: sra_accessions
     submitter-names: authors
     submitter-affiliation: institution
+  austrakka_rename:
+   strain: Seq_ID
+   host: Host
+   country: Country
+   division: Jurisdiction
+
   # Standardized strain name regex
   # Currently accepts any characters because we do not have a clear standard for strain names
   strain_regex: 'magicword' #regex designed to fail so that genbank_accession is used instead
@@ -87,26 +108,16 @@ curate:
   sequence_field: 'sequence'
   # Final output columns for the metadata TSV
   metadata_columns: [
-    'strain',
-    'genbank_accession',
-    'genbank_accession_rev',
+    'Seq_ID',
     'date',
     'region',
-    'country',
-    'division',
-    'location',
-    'length',
-    'host',
-    'release_date',
-    'update_date',
+    'Country',
+    'Jurisdiction',
+    'Host',
     'nextclade_genotype', # inferred from virus_tax_id
-    'sra_accessions',
-    'abbr_authors',
-    'authors',
     'institution'
   ]
 
 nextclade:
-  min_length: 9000
   min_seed_cover: 0.1
   nextclade_fields: 'seqName,clade,qc.overallStatus'

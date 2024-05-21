@@ -61,18 +61,43 @@ rule format_ncbi_datasets_ndjson:
         ndjson=OUTDIR / "data" / "genbank.ndjson",
     params:
         ncbi_datasets_fields=",".join(config["ncbi_datasets_fields"]),
+        seq_id_column = "accession-rev",
+        seq_field = "sequence"
     log:
         OUTDIR / "logs" / "format_ncbi_datasets_ndjson.txt",
     shell:"""
     augur curate passthru \
         --metadata {input.ncbi_dataset_tsv} \
         --fasta {input.ncbi_dataset_sequences} \
-        --seq-id-column accession-rev \
-        --seq-field sequence \
+        --seq-id-column {params.seq_id_column:q} \
+        --seq-field {params.seq_field} \
         --unmatched-reporting warn \
         --duplicate-reporting warn \
         2> {log} > {output.ndjson}
     """
+
+# rule from_austrakka_datasets_ndjson:
+#     input:
+#         austrakka_sequences = "",
+#         austrakka_metadata = "",
+#     output:
+#         ndjson=OUTDIR / "data" / "austrakka.ndjson",
+#     params:
+#         ncbi_datasets_fields=",".join(config["austrakka_datasets_ndjson"]),
+#         seq_id_column = "accession-rev",
+#         seq_field = "sequence",
+#     log:
+#         OUTDIR / "logs" / "format_austrakka_datasets_ndjson.txt",
+#     shell:"""
+#     augur curate passthru \
+#         --metadata {input.austrakka_metadata} \
+#         --fasta {input.austrakka_sequences} \
+#         --seq-id-column {params.seq_id_column} \
+#         --seq-field {params.seq_field} \
+#         --unmatched-reporting warn \
+#         --duplicate-reporting warn \
+#         2> {log} > {output.ndjson}
+#     """
 
 def _get_all_sources(wildcards):
     return [OUTDIR / f"data/{source}.ndjson" for source in config["sources"]]
