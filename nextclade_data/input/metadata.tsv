@@ -1,0 +1,492 @@
+Seq_ID	date	region	Country	Jurisdiction	Host	nextclade_genotype	institution	clade	qc.overallStatus
+U47032							Haolin Ni, University of Texas Medical Branch, Pathology, Galveston, TX 77555-0609	3	good
+U15763							Haolin Ni, Pathology, University of Texas Medical Branch, Galveston, TX 77555-0605	3	good
+U14163							Gwong-Jen Chang, Division of Vector-Borne Infectious Diseases, Molecular Biology Branch, National Center for Infectious Diseases, Centers for Disease Control and Prevention, Public Health Service, Ramport Drive, Fort Collins, CO 80522	3	good
+PP682374	2023-05-25	Asia	China	Hainan	Culex tritaeniorhynchus		Wuhan Institute of Virology, Chinese Academic and Science, Key Laboratory of Virology and Biosafety	1	good
+PP682373	2023-05-25	Asia	China	Hainan	Culex tritaeniorhynchus		Wuhan Institute of Virology, Chinese Academic and Science, Key Laboratory of Virology and Biosafety	1	good
+PP682372	2022-04-26	Asia	China	Hainan	Culex		Wuhan Institute of Virology, Chinese Academic and Science, Key Laboratory of Virology and Biosafety	1	good
+PP582382	2015-12-31	Asia	South Korea		Homo sapiens		The Catholic University of Korea, Department of Microbiology, College of Medicine	5	good
+PP478074	2015-12-31	Asia	South Korea		Homo sapiens		The Catholic University of Korea, Department of Microbiology, College of Medicine	5	good
+PP336430	1982-XX-XX	Asia	India		Homo sapiens		Colorado State University, Biomedical Sciences	3	good
+PP336429	2003-XX-XX	Asia	Vietnam		Culex tritaeniorhynchus		Colorado State University, Biomedical Sciences	1	good
+PP057999	2018-06-04	Europe	Spain				Vircell S.A., I+D, Molecular Diagnostics	3	good
+OR965960	2022-03-16	Oceania	Australia	Queensland	Culicidae		Queensland Health Forensic and Scientific Services, Public Health Virology	4	good
+OR711406	2022-10-XX	Asia	China		Anatidae		Yangzhou University, College of Veterinary Medicine	1	good
+OR605600	2010-XX-XX	Asia	South Korea		Sus scrofa		Incheon National University, Incheon National University	1	good
+OR531689	2021-07-XX	Asia	China		Culex		Yangzhou University, College of Veterinary Medicine	1	good
+OR500440	2020-10-11	Asia	South Korea		Culex orientalis		The Catholic university of Korea	5	good
+OR119827	1980-06-XX	Asia	Indonesia		Culicidae		Colorado State University, Biomedical Sciences	2	good
+OP904182	2022-02-XX	Oceania	Australia	New South Wales	Sus scrofa		The University of Sydney, Sydney Institute for Infectious Diseases	4	good
+OP588746	2020-10-XX	Asia	China		Culicidae		Yangzhou University, College of Veterinary Medicine	3	good
+ON929280	2018-XX-XX	Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine Department of Microbiology and Immunology	1	good
+ON929279	2015-XX-XX	Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine Department of Microbiology and Immunology	3	good
+ON929278	2014-XX-XX	Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine Department of Microbiology and Immunology	1	good
+ON929277	2011-XX-XX	Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine Department of Microbiology and Immunology	3	good
+ON875960	2019-06-28	Asia	India		Culex tritaeniorhynchus		ICAR-National Research Centre on Pig, Animal Genetics and Breeding	1	good
+ON804799	2020-11-XX	Asia	Singapore		Culex tritaeniorhynchus		Environmental Health Institute, Field Ecology, EETD	1	good
+ON804798	2019-10-XX	Asia	Singapore		Culex		Environmental Health Institute, Field Ecology, EETD	1	good
+ON804797	2019-11-XX	Asia	Singapore		Culex tritaeniorhynchus		Environmental Health Institute, Field Ecology, EETD	1	good
+ON624132	2022-02-20	Oceania	Australia	Queensland	Sus scrofa		CSIRO, Australian Animal Health Laboratory	4	good
+ON379076	2019-05-21	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379074	2019-07-27	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379072	2019-07-27	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379070	2019-07-22	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379068	2019-07-22	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379066	2019-07-15	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379065	2019-07-14	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+ON379063	2019-06-24	Asia	India		Homo sapiens		National Institute of Mental Health and Neurosciences, Department of Neurovirology	3	good
+OM867669	2021-03-10	Oceania	Australia	Northern Territory	Homo sapiens		CSIRO, Australian Animal Health Laboratory	4	good
+OM572550	2018-XX-XX	Asia	China	Zhejiang	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572549	2018-XX-XX	Asia	China	Zhejiang	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572548	2018-XX-XX	Asia	China	Liaoning	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572547	2018-XX-XX	Asia	China	Liaoning	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572546	2017-XX-XX	Asia	China	Guangxi	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572545	2018-XX-XX	Asia	China	Liaoning	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572544	2017-XX-XX	Asia	China	Yunnan	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572543	2017-XX-XX	Asia	China	Yunnan	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572542	2017-XX-XX	Asia	China	Yunnan	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572541	2018-XX-XX	Asia	China	Shaanxi	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572540	2019-XX-XX	Asia	China	Shaanxi	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572539	2019-XX-XX	Asia	China	Gansu	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572538	2019-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572537	2019-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572536	2016-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572535	2016-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572534	2016-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OM572533	2016-XX-XX	Asia	China	Shandong	Culicidae		Chinese Center for Disease Control and Prevention, National Institute for Viral Disease Control and Prevention	1	good
+OK423757	2020-09-XX	Asia	China		Sus scrofa		College of Veterinary Medicine, Sichuan Agricultural University	1	good
+OK257215		Asia	India				Regional Centre for Biotechnology, Laboratory of Virology	3	good
+OK257214		Asia	India				Regional Centre for Biotechnology, Laboratory of Virology	3	good
+OK257213		Asia	India				Regional Centre for Biotechnology, Laboratory of Virology	3	good
+NC_001437							National Center for Biotechnology Information, NIH	3	good
+MZ923735	2014-XX-XX	Asia	China		Sus scrofa		College of Veterinary Medicine Huazhong Agricultural University, State Key Laboratory of Agricultural Microbiology	3	good
+MZ702743	2018-11-02	Asia	India		Sus scrofa		Principal Scientist, Animal Genetics and Breeding	1	good
+MZ540902		Asia	China		Culicidae		Yangzhou University, The College of Veterinary Medicine	3	good
+MZ540901		Asia	China		Sus scrofa		Yangzhou University, The College of Veterinary Medicine	1	good
+MW766364	2019-XX-XX	Asia	China				Wuhan Institute of Virology, Chinese Academy of Sciences, Computational Virology Group, Center of Bacteria and Viruses Resources and Bioinformation	3	good
+MW766363	2019-XX-XX	Asia	China				Wuhan Institute of Virology, Chinese Academy of Sciences, Computational Virology Group, Center of Bacteria and Viruses Resources and Bioinformation	3	good
+MW766362	2019-XX-XX	Asia	China				Wuhan Institute of Virology, Chinese Academy of Sciences, Computational Virology Group, Center of Bacteria and Viruses Resources and Bioinformation	3	good
+MT859416							ICMR-National Institute of Virology, Encephalitis Group	1	good
+MT859415	2009-XX-XX	Asia	India		Homo sapiens		ICMR-National Institute of Virology, Encephalitis Group	1	good
+MT764733		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764732		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764731		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764730		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764729		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764728		Asia	China				University of Texas Medical Branch, Pathology	3	good
+MT764727	1980-04-22	Asia	China		Culex pipiens		University of Texas Medical Branch, Pathology	3	good
+MT568540	2016-09-13	Asia	South Korea	Yongsan	Culex orientalis		Walter Reed Army Institute of Research, Viral Diseases Branch	5	good
+MT568539	2018-08-14	Asia	South Korea	Camp Hamphreys	Culex bitaeniorhynchus		Walter Reed Army Institute of Research, Viral Diseases Branch	5	good
+MT568538	2018-08-14	Asia	South Korea	Camp Hamphreys	Culex bitaeniorhynchus		Walter Reed Army Institute of Research, Viral Diseases Branch	5	good
+MT560941	2016-11-01	Asia	China		Culex quinquefasciatus		National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, Department of Viral Encephalitis	1	good
+MT254426	2018-09-05	Asia	China	Fuyu Village	Culex tritaeniorhynchus		National Institute of Parasitic Diseases (NIPD), Chinese Center for Disease Control and Prevention (China CDC), Dept. of Vector-borne Tropical Disease	1	good
+MT253737	1998-XX-XX	Oceania	Australia	Mabuiag Island	Sus scrofa		Queensland Health Forensic and Scientific Services, Public Health Virology	2	good
+MT253736	1998-XX-XX	Oceania	Australia	Seisia	Sus scrofa		Queensland Health Forensic and Scientific Services, Public Health Virology	2	good
+MT253735	1998-XX-XX	Oceania	Australia	Injioo	Sus scrofa		Queensland Health Forensic and Scientific Services, Public Health Virology	2	good
+MT253734	2004-XX-XX	Oceania	Australia	Bamaga	Culex sitiens		Queensland Health Forensic and Scientific Services, Public Health Virology	1	good
+MT253733	2002-XX-XX	Oceania	Australia	Badu Island In the Torres Strait	Sus scrofa		Queensland Health Forensic and Scientific Services, Public Health Virology	1	good
+MT253732	2000-XX-XX	Oceania	Australia	Torres Strait	Sus scrofa		Queensland Health Forensic and Scientific Services, Public Health Virology	1	good
+MT253731	2019-12-XX	Oceania	Australia		Homo sapiens		Queensland Health Forensic and Scientific Services, Public Health Virology	4	good
+MT232844	2015-06-XX	Asia	India		Sus scrofa		ICAR - National Institute of High Security Animal Diseases, Pathogenomics Lab	1	good
+MT134112	2018-XX-XX	Asia	China	Ningxia	Homo sapiens		National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, Department of Arbovirus, NHC Key Laboratory of Biosafety	1	good
+MN639770	2018-05-XX	Asia	China		Homo sapiens		Institute of Medical Biology, Chinese Academy of Medical Sciences, Joint Laboratory of Molecular Epidemiology	3	good
+MN544780	2019-XX-XX	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	1	good
+MN544779	2019-XX-XX	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	1	good
+MK585066	2016-03-06	Asia	China		Mus musculus		Chinese Academy of Agricultural Sciences, Changchun Veterinary Research Institute	3	good
+MK558811	2014-07-03	Asia	China		Culex tritaeniorhynchus		Zhejiang Provincial Center for Disease Control and Prevention, Department of Microbiology	1	good
+MK541529	2015-11-17	Asia	South Korea		Homo sapiens		National Research Institute of Health, Centers for Disease Control & Prevention, Division of Emerging Infectious Disease and Vector Research, Center for Infectious Disease Research	5	good
+MK495877	2017-09-XX	Asia	South Korea		Phocidae		Animal and Plant Quarantine Agency, Foreign Animal Disease Division	1	good
+MH753133	2016-06-14	Asia	China		Culex tritaeniorhynchus		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	1	good
+MH753132	2016-08-18	Asia	China		Culex tritaeniorhynchus		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	3	good
+MH753131	2016-06-12	Asia	China		Anopheles sinensis		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	3	good
+MH753130	2016-07-15	Asia	China		Anopheles sinensis		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	3	good
+MH753129	2016-08-11	Asia	China		Culex tritaeniorhynchus		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	1	good
+MH753128	2015-07-09	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	3	good
+MH753127	2015-08-20	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	1	good
+MH753126	2015-08-06	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Science, Department of Swine Infectious Disease	3	good
+MH385014	2016-XX-XX	Asia	China		Culicidae		Yanbian University, Medical College	1	good
+MH258853		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH258852		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH258851		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH258850		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH258849		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH258848		Asia	China				National Institutes for Food and Drug Control, Department of Arbovirus Vaccine Research	3	good
+MH184576	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184575	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184574	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184573	2017-XX-XX	Asia	China		Culicoides		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184572	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184571	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184570	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184569	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184568	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH184567	2017-XX-XX	Asia	China		Culex tritaeniorhynchus		Institue of Pathogenic Microbiology, Guangdong Provincial Center for Disease Control and Prevention	1	good
+MH165313	2017-09-XX	Asia	China		Phocidae		Beijing Anheal Laboratories Co. Ltd, R & D Center	1	good
+MF542268	2013-XX-XX	Asia	China		Sus scrofa		Shanghai Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Department of Swine Infectious Diseases	1	good
+MF326270		Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine	3	good
+MF124316	2016-08-XX	Asia	China		Sus scrofa		College of Veterinary Medicine, Sichuan Agricultural University	1	good
+MF124315	2016-02-XX	Asia	China		Sus scrofa		College of Veterinary Medicine, Sichuan Agricultural University	1	good
+MF002373	2016-05-01	Asia	China		Sus scrofa		Guangxi Veterinary Research Institute /Guangxi Key Laboratory of Veterinary Biotechnology, Virology Department	3	good
+M55506								3	good
+M18370								3	good
+LY683280								3	good
+LP981865								3	good
+LP981864								3	good
+LP981863								3	good
+LP837642								3	good
+LP837641								3	good
+LP837640								3	good
+LP837228								3	good
+LP837227								3	good
+LP837226								3	good
+LC798352	2020-08-18	Asia	Japan	Kochi	Sus scrofa		Department of Medical Technology, School of Life and Environmental Science; 1-17-1 Fuchinobe Chuouku, Sagamihara, Kanagawa 252-5201	1	good
+LC798351	2021-08-04	Asia	Japan	Kochi	Sus scrofa		Department of Medical Technology, School of Life and Environmental Science; 1-17-1 Fuchinobe Chuouku, Sagamihara, Kanagawa 252-5201	1	good
+LC789557	2017-08-14	Asia	Japan	Kochi	Sus scrofa		Department of Medical Technology, School of Life and Environmental Science; 1-17-1 Fuchinobe Chuouku, Sagamihara, Kanagawa 252-5201	1	good
+LC786330	2023-07-04	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology, School of Life and Environmental Science; 1-17-1 Fuchinobe Chuouku, Sagamihara, Kanagawa 252-5201	1	good
+LC785647	2019-08-20	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology, School of Life and Environmental Science; 1-17-1 Fuchinobe Chuouku, Sagamihara, Kanagawa 252-5201	1	good
+LC708276	2017-08-18	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	1	good
+LC708275	2017-08-15	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	1	good
+LC708274	2013-07-30	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	1	good
+LC708273	2013-07-09	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	1	good
+LC705012	2019-03-12	Asia	Japan	Kochi	Bos taurus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	3	good
+LC704880	2018-10-26	Asia	Japan	Kochi	Bos taurus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	1	good
+LC704641	2009-02-08	Asia	Japan	Kochi	Sus scrofa domesticus		Department of Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara, Kanagawa 252-5201	3	good
+LC687612	2021-07-17	Asia	Japan		Phoca vitulina		Faculty of Agriculture, Department of Veterinary Microbiology; 1-1-1, Yayoi, Bunkyo-ward, Tokyo, Tokyo 113-0032	1	good
+LC623822	2020-07-XX	Asia	Japan	Kagawa	Culex tritaeniorhynchus		Department of Virology I; 1-23-1 Toyama, Shinjuku, Tokyo 162-8640	1	good
+LC579814	2019-07-03	Asia	Indonesia	Bali	Culex vishnui		Department of Medical Entomology; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	4	good
+LC557017	2012-08-XX	Asia	Japan		Sus scrofa domesticus		Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara-shi, Kanagawa 252-5201	1	good
+LC556228	2006-09-XX	Asia	Japan	Kochi	Sus scrofa domesticus		Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara-shi, Kanagawa 252-5201	1	good
+LC556099	2004-08-XX	Asia	Japan	Kochi	Sus scrofa domesticus		Medical Technology; 1-17-71 Fuchinobe, Chuo-ku, Sagamihara-shi, Kanagawa 252-5201	3	good
+LC513838	2017-09-05	Asia	Japan	Ishikawa	Culex tritaeniorhynchus		Medical Entomology; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+LC461961	2017-10-17	Asia	Indonesia	Bali	Sus scrofa		Department of Veterinary Science; 1-23-1 Toyama, Shinjuku-ku, Tokyo 162-8640	4	good
+LC461960	2018-03-09	Asia	Philippines	Mindanao	Sus scrofa		Department of Veterinary Science; 1-23-1 Toyama, Shinjuku-ku, Tokyo 162-8640	3	good
+LC461958	2017-08-14	Asia	Thailand	Nakornnayok Province	Sus scrofa		Department of Veterinary Science; 1-23-1 Toyama, Shinjuku-ku, Tokyo 162-8640	1	good
+LC461957	2016-09-08	Asia	Japan	Yamaguchi	Culex tritaeniorhynchus		Department of Veterinary Science; 1-23-1 Toyama, Shinjuku-ku, Tokyo 162-8640	1	good
+L78128								3	good
+L48961								3	good
+KY927819	2013-05-19	Asia	Cambodia		Homo sapiens		Institut Pasteur du Cambodge, Virology	1	good
+KY927818	2015-09-09	Asia	Cambodia		Sus scrofa		Institut Pasteur du Cambodge, Virology	1	good
+KY927817	2015-07-10	Asia	Cambodia		Sus scrofa		Institut Pasteur du Cambodge, Virology	1	good
+KY927816	2015-07-07	Asia	Cambodia		Homo sapiens		Institut Pasteur du Cambodge, Virology	1	good
+KY927815	2014-09-12	Asia	Cambodia		Culex tritaeniorhynchus		Institut Pasteur du Cambodge, Virology	1	good
+KY885009							State Research Center of Virology and Biotechnology 'Vector', Department of Molecular Virology for Flaviviruses and Viral Hepatitis	3	good
+KY650727	2010-07-03	Asia	China	Zhejiang	Culex tritaeniorhynchus		Center for Disease Control and Prevention of Zhejiang Province, Virus Institute	1	good
+KY650726	2010-07-03	Asia	China	Zhejiang	Culex tritaeniorhynchus		Center for Disease Control and Prevention of Zhejiang Province, Virus Institute	1	good
+KY650725	1983-07-13	Asia	China	Zhejiang	Culex tritaeniorhynchus		Center for Disease Control and Prevention of Zhejiang Province, Virus Institute	3	good
+KY650724	1982-07-15	Asia	China	Zhejiang	Culex tritaeniorhynchus		Center for Disease Control and Prevention of Zhejiang Province, Virus Institute	3	good
+KY609173	2013-10-20	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KY078829	2015-08-XX	Asia	China		Culex pipiens pallens		Shanxi Medical University, Department of Immunology and Microbiology	1	good
+KX965684	2008-XX-XX	Asia	China		Sus scrofa		South China Agricultural University, College of Veterinary Medicine	3	good
+KX945367	2016-03-16	Africa	Angola		Homo sapiens		Institut Pasteur, GFMI unit	3	good
+KX779522	2016-02-12	Asia	China	Sichuan	Sus scrofa		ANIMTECH, Livestock and Poultry Biological Products Key Laboratory of Sichuan Province	3	good
+KX779521	2016-02-12	Asia	China	Sichuan Provence	Sus scrofa		ANIMTECH, Livestock and Poultry Biological Products Key Laboratory of Sichuan Province	3	good
+KX779520	2016-02-12	Asia	China	Sichuan	Sus scrofa		ANIMTECH, Livestock and Poultry Biological Products Key Laboratory of Sichuan Province	3	good
+KX357114	2015-08-XX	Asia	China		Culex tritaeniorhynchus		Jiangsu Provincial Center for Disease Control and Prevention, Department of Disinfection and Vector Control	1	good
+KX254417		Asia	China				University of Texas Medical Branch, Pathology	3	good
+KX254416		Asia	China				University of Texas Medical Branch, Pathology	3	good
+KX254415		Asia	China				University of Texas Medical Branch, Pathology	3	good
+KU904395	2013-XX-XX	Asia	China		Culicidae		Institute of Microbiology and Epidemiology	3	good
+KU871371	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871370	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871369	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871368	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871367	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871366	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871365	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871364	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871363	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871362	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871361	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871360	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871359	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871358	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871357	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871356	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871355	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871354	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871353	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871352	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871351	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871350	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871349	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871348	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871347	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871346	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871345	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871344	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871343	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871342	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871341	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871340	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871339	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871338	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871337	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871336	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871335	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871334	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871333	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871332	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871331	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871330	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871329	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871328	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871327	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871326	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871325	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871324	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871323	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871322	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871321	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871320	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871319	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871318	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871317	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU871316	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU821122	2015-02-02	Asia	China				Institute of Microbiology and Epidemiology, Department of Vector Biology and Control	3	good
+KU705229	1981-06-XX	Asia	Indonesia	Flores	Culex tritaeniorhynchus		University of Texas Medical Branch, Microbiology and Immunology	3	good
+KU705228	1979-XX-XX	Asia	Vietnam		Homo sapiens		University of Texas Medical Branch, Microbiology and Immunology	4	good
+KU705227	1984-06-18	Asia	Philippines	Santo Cristo	Sus sp.		University of Texas Medical Branch, Microbiology and Immunology	3	good
+KU705226	1985-06-10	Asia	Sri Lanka	North Central Province	Culex tritaeniorhynchus		University of Texas Medical Branch, Microbiology and Immunology	3	good
+KU705225	1977-XX-XX	Asia	China	Yunan	Culex pseudovishnui		University of Texas Medical Branch, Microbiology and Immunology	3	good
+KU705224	1991-08-XX	Asia	South Korea	Kyung Kee	Culex tritaeniorhynchus		University of Texas Medical Branch, Microbiology and Immunology	1	good
+KU508409	2012-08-XX	Asia	China		Sus scrofa		Sichuan Agricultural University, Preventive Veterinary Medicine	1	good
+KU508408	2012-08-XX	Asia	China		Sus scrofa		Sichuan Agricultural University, Preventive Veterinary Medicine	1	good
+KU363309	2013-08-11	Asia	China		Sus scrofa		Sichuan Agricultural University, Preventive Veterinary Medicine	3	good
+KU351668	2014-08-25	Asia	China	Sichuan Province	Sus scrofa		Sichuan Agricultural University, Preventive Veterinary Medicine	1	good
+KU351667	2010-08-12	Asia	China	Sichuan Province	Culicidae		Sichuan Agricultural University, Preventive Veterinary Medicine	1	good
+KU323483							Utah State University, Department of Animal, Dairy, and Veterinary Sciences	3	good
+KT957423	1982-XX-XX	Asia	China	Yunnan Province	Culex annulus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT957422	1977-XX-XX	Asia	China	Yunnan Province	Culex pseudovishnui		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT957421	2010-06-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT957420	2007-07-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT957419	2007-07-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT447437	1969-XX-XX	Asia	South Korea		Sus scrofa		Utah State University, Department of Animal, Dairy, and Veterinary Sciences (ADVS)	3	good
+KT239164		Asia	India		Homo sapiens		Translational Health Science and Technology Institute, Vaccine and Infectious Disease Research Centre	3	good
+KT229575	2010-08-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT229574	2009-07-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT229573	2010-08-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KT229572	2010-08-XX	Asia	China	Yunnan Province	Culex tritaeniorhynchus		Yunnan Institute of Endemic Disease Control and Prevention	1	good
+KR908703	1988-XX-XX	Asia	South Korea		Culex tritaeniorhynchus		Korea National Institute of Health, Division of Arboviruses	3	good
+KR908702	2005-XX-XX	Asia	South Korea	Gunsan-Si	Culex tritaeniorhynchus		Korea National Institute of Health, Division of Arboviruses	1	good
+KR265316		Asia	China				Henan Institution of Traditional Chinese Medicine, Department of Scientific Research	3	good
+KP164498	2014-09-08	Asia	India		Sus scrofa		Indian Veterinary Research Institute, Division of Pathology	3	good
+KM677246	1952-XX-XX	Asia	Singapore		Homo sapiens		Institute of Infection and Global Health, Clinical Infection Microbiology and Immunology, Brain Infections Group	5	good
+KM658163	2012-08-XX	Asia	China		Sus scrofa		Sichuan Agricultural University, Institute of Preventive Veterinary Medicine	1	good
+KF907505		Asia	Taiwan		Culex tritaeniorhynchus		Faculte de Medecine de Marseille, UMR 190 Emergence des Pathologies Virales	3	good
+KF711994	1975-XX-XX	Asia	South Korea		Sus scrofa		Animal and Plant Quarantine Agency, Animal and Plant Health Research	3	good
+KF667327	2011-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667326	2012-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667325	2012-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667324	2012-XX-XX	Asia	Taiwan		Homo sapiens		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667323	2012-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667322	2011-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667321	2010-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667320	2009-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667319	2009-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667318	2009-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667317	2008-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667316	2008-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	1	good
+KF667315	2009-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF667314	2010-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF667313	2008-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF667312	2007-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF667311	2006-XX-XX	Asia	Taiwan		Homo sapiens		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF667310	2005-XX-XX	Asia	Taiwan		Culex tritaeniorhynchus		Centers for Disease Control, Center for Research, Diagnostics and Vaccine Development	3	good
+KF297916	2004-XX-XX	Asia	China	Guizhou	Sus scrofa		South China Agricultural University, College of Veterinary Medicine	3	good
+KF297915	2009-XX-XX	Asia	China	Guangdong	Sus scrofa		South China Agricultural University, College of Veterinary Medicine	3	good
+KC915016	2010-05-08	Asia	China		Sus scrofa		Guizhou University, College of Animal Science	3	good
+KC517497		Asia					J. Craig Venter Institute	3	good
+KC196115	2009-06-30	Asia	Laos		Homo sapiens		"Faculte de Medecine de Marseille, UMR 190 ""Emergence des Pathologies Virales"""""""	1	good
+KC183732	2010-08-25	Asia	China		Homo sapiens		Department of Infectious Diseases and Gastroenterology, Children's Hospital of Chongqing Medical University	3	good
+JX131374	2009-03-XX	Asia	India		Equus caballus		National Research Centre on Equines, Animal Biotechnology	3	good
+JX072965	2010-XX-XX	Asia	India	West Bengal	Homo sapiens		ICMR Virus Unit, Kolkata, Arbovirology	3	good
+JX050179	2008-08-XX	Asia	India	West Bengal	Homo sapiens		ICMR Virus Unit, Kolkata, Arbovirology	3	good
+JQ086763	2009-09-01	Asia	China		Sus scrofa		Jilin University, College of Animal Science and Veterinary Medicine, Institute of Military Veterinary	3	good
+JQ086762	2009-09-01	Asia	China		Culicidae		Jilin University, College of Animal Science and Veterinary Medicine, Institute of Military Veterinary	3	good
+JQ031753	2010-07-29	Asia	Taiwan		Culicidae		National Dong Hwa University, Life Science	1	good
+JN864064	2009-09-20	Asia	China	Yunnan	Culicidae		Jilin University, College of Animal Science and Veterinary Medicine, Institute of Military Veterinary	3	good
+JN711459	2008-XX-XX	Asia	China		Scotophilus kuhlii		Southern Medical University, Epidemiology	3	good
+JN711458	2009-XX-XX	Asia	China		Myotis ricketti		Southern Medical University, Epidemiology	3	good
+JN644310	2009-08-01	Asia	India		Homo sapiens		Institute of Genomics and Integrative Biology, Genomics and Molecular Medicine	Failed	Failed
+JN604986	2006-04-01	Asia	South Korea				College of Medicine, Chungbuk National University, Department of Microbiology	3	good
+JN381873							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381872							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381871							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381870							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381869							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381868							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381867							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381866							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381865							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381864							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381863							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381862							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381861							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381860							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381859							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381858							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381857							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381856							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381855							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381854							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381853							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	3	good
+JN381852							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381851							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381850							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381849							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381848							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381847							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381846							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381845							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381844							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381843							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381842							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381841							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381840							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381839							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381838							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381837							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381836							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381835							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381834							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381833							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381832							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381831							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JN381830							Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+JF915894	2009-XX-XX	Asia	China		Culicidae		National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, Department of Viral Encephalitis and Arbovirus	5	good
+JF706286	2009-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706285	1990-XX-XX	Asia	China		Rousettus leschenaultii		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706284	1990-XX-XX	Asia	China		Rousettus leschenaultii		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706283	1955-XX-XX	Asia	China				State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706282	1983-XX-XX	Asia	China		Forcipomyia taiwana		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706281	2005-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706280	1955-XX-XX	Asia	China				State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706279	1977-XX-XX	Asia	China		Culex pseudovishnui		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706278	2002-XX-XX	Asia	China		Culex modestus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706277	2006-XX-XX	Asia	China		Armigeres		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706276	2002-XX-XX	Asia	China		Culicoides		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706275	1960-XX-XX	Asia	China				State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706274	2008-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706273	2002-XX-XX	Asia	China				State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706272	2004-XX-XX	Asia	China		Culex theileri		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706271	2006-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706270	2006-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706269	1950-XX-XX	Asia	China				State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	3	good
+JF706268	2009-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF706267	2009-XX-XX	Asia	China		Culex tritaeniorhynchus		State Key Laboratory for Infectious Disease Prevention and Control, Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention	1	good
+JF499790	2009-XX-XX	Asia	Taiwan		Culicidae		National Chung Hsing University, Graduate Institute of Microbiology and Public Health	1	good
+JF499789	2009-XX-XX	Asia	Taiwan		Culicidae		National Chung Hsing University, Graduate Institute of Microbiology and Public Health	1	good
+JF499788	2009-XX-XX	Asia	Taiwan		Culicidae		National Chung Hsing University, Graduate Institute of Microbiology and Public Health	1	good
+HQ893545	2009-08-14	Asia	China		Sus scrofa		Division of Animal Infectious Disease, College of Veterinary Medicine, Huazhong Agricultural University, Department of Virology	1	good
+HQ652538	2009-XX-XX	Asia	China		Culicidae		National Institute for Viral Disease Control and Prevention, Department of Viral Encephalitis and Arbovirus	1	good
+HQ223287	1978-XX-XX	Asia	Indonesia		Culicidae		University of Texas Medical Branch - Galveston, Pathology	2	good
+HQ223286	1970-XX-XX	Asia	Malaysia		Culicidae		University of Texas Medical Branch - Galveston, Pathology	2	good
+HQ223285	1951-XX-XX	Asia	South Korea		Homo sapiens		University of Texas Medical Branch - Galveston, Pathology	2	good
+HM596272	1952-XX-XX	Asia	Malaysia		Homo sapiens		University of Liverpool, Brain Infections Group	5	good
+HM366552	2008-09-XX	Asia	China		Homo sapiens		Institute for Viral Disease Control and Prevention, State Key Laboratory for Infectious Disease Prevention and Control	1	good
+HM228921	1990-XX-XX	Asia	Vietnam		Homo sapiens		National Institude of Hygiene and Epidemiology, Virology	1	good
+HE861351							University of Malaya, Department of Medical Microbiology, Faculty of Medicine, 50603 Kuala Lumpur	3	good
+GU556217	2008-06-XX	Asia	China		Sus scrofa		Key Lab of Vaccine Against Hemorrhagic Fever with Renal Syndrome, Zhejiang Provincial Center for Disease Prevention and Control	1	good
+GU205163	2007-06-XX	Asia	China	Guangxi	Homo sapiens		Institut Pasteur of Shanghai, Chinese Academy of Sciences, Lab of Emerging Viruses	1	good
+GU187972	2009-06-XX	Asia	China		Culex tritaeniorhynchus		National Institute for the Control of Pharmaceutical and Biological Products, Viral Vaccine 1	1	good
+GQ918133							Nanjing Agriculture University, Key Laboratory of Animal Disease Diagnostic and Immunology, Ministry of Agriculture	3	good
+GQ902063		Asia	Thailand		Culicidae		University of Nottingham, School of Vet Med & Sci	3	good
+GQ902062		Asia	Thailand		Homo sapiens		University of Nottingham, School of Vet Med & Sci	1	good
+GQ902061		Asia	Thailand		Sus scrofa		University of Nottingham, School of Vet Med & Sci	1	good
+GQ902060		Asia	Thailand		Culicidae		University of Nottingham, School of Vet Med & Sci	1	good
+GQ902059		Asia	Thailand		Homo sapiens		University of Nottingham, School of Vet Med & Sci	1	good
+GQ902058	1982-XX-XX	Asia	Thailand		Sus scrofa		University of Nottingham, School of Vet Med & Sci	1	good
+GQ199609		Asia	South Korea				Chungbuk National University, College of Medicine, Department of Microbiology	3	good
+FV537325								Failed	Failed
+FV537324								Failed	Failed
+FV537323								3	good
+FV537322								3	good
+FJ495189	2007-08-XX	Asia	China		Sus scrofa		Shanghai Veterinary Research Insitute, Swine Infectious Disease	1	good
+FJ185037	1997-XX-XX	Asia	China		Murina aurata		Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, The Department of Viral Encephalitis	3	good
+FJ185036	1986-XX-XX	Asia	China		Rousettus leschenaultii		Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention, The Department of Viral Encephalitis	3	good
+EU880214	2007-07-XX	Asia	China		Culex pipiens pallens		Key Lab of Vaccine Against Hemorrhagic Fever with Renal Syndrome, Zhejiang Provincial Center for Disease Prevention and Control	1	good
+EU693899	2007-07-XX	Asia	China		Culex tritaeniorhynchus		Key Lab of Vaccine Against Hemorrhagic Fever with Renal Syndrome, Zhejiang Provincial Center for Disease Prevention and Control	1	good
+EU429297	2007-XX-XX	Asia	China				Beijing Institute of Microbiology and Epidemiology, State Key Laboratory of Pathogen and Biosecurity, Department of Epidemiology	1	good
+EF623989	2002-XX-XX	Asia	India	Maharashtra			Microbial Containment Complex, National Institute of Virology, Japanese encephalitis/West Nile Virus Group	3	good
+EF623988	2005-08-XX	Asia	India	Up			Microbial Containment Complex, National Institute of Virology, Japanese encephalitis/West Nile Virus Group	3	good
+EF623987	2001-XX-XX	Asia	India	Up			Microbial Containment Complex, National Institute of Virology, Japanese encephalitis/West Nile Virus Group	3	good
+EF571853		Asia	Japan				Midwest Research Institute, Biotechnology	3	good
+EF543861							Chinese Academy of Agricultural Science, Shanghai Veterinary Research Institute	3	good
+EF107523		Asia	China		Sus scrofa		Institute of Virus Research, Northwest A&F University	3	good
+DI085220								3	good
+DI075091								3	good
+DD367828								3	good
+DD367827								3	good
+DD298243								3	good
+DD298237								3	good
+D90195								3	good
+D90194								3	good
+AY849939							College of Life Science and Technology, Biochemistry	3	good
+AY585243		Asia	South Korea				Chungbuk National University, School of Medicine, Department of Microbiology	3	good
+AY585242		Asia	South Korea				Chungbuk National University, School of Medicine, Department of Microbiology	3	good
+AY508813		Asia					Institute of Tropical Medicine, Department of Virology	3	good
+AY508812		Asia					Institute of Tropical Medicine, Department of Virology	3	good
+AY316157							National Veterinary Research and Quarantine Service, Virology	1	good
+AY303798							Chang Gung University, Public Health and Parasitology	3	good
+AY303797							Chang Gung University, Public Health and Parasitology	3	good
+AY303796							Chang Gung University, Public Health and Parasitology	3	good
+AY303795							Chang Gung University, Public Health and Parasitology	3	good
+AY303794							Chang Gung University, Public Health and Parasitology	3	good
+AY303793							Chang Gung University, Public Health and Parasitology	3	good
+AY303792							Chang Gung University, Public Health and Parasitology	3	good
+AY303791							Chang Gung University, Public Health and Parasitology	3	good
+AY184212		Asia	Indonesia		Culicidae		University of Liverpool, Neurological Science, Walton Center for Neurology and Neurosurgery	4	good
+AF486638							China Medical College, Microbiology	3	good
+AF416457							National Institute for the Control of Pharmaceutical and Biological Products, Vaccine I	3	good
+AF315119							National Institute for the Control of Phamarceutical and Biological Products, Vaccine I Lab	3	good
+AF254453		Asia	Taiwan	Liu-Chiu Islet	Armigeres subalbatus		Chang Gung University, Parasitology	3	good
+AF254452		Asia	Taiwan		Culex tritaeniorhynchus		Chang Gung University, Parasitology	3	good
+AF221500							National Tsing Hua University, Department of Life Science	3	good
+AF221499							National Tsing Hua University, Department of Life Science	3	good
+AF217620		Oceania	Australia				CSIRO, Australian Animal Health Laboratory	2	good
+AF098737		Asia	Taiwan		Aedes albopictus		Academia Sinica, Institute of Biomedical Sciences	3	good
+AF098736		Asia	Taiwan		Aedes albopictus		Academia Sinica, Institute of Biomedical Sciences	3	good
+AF098735		Asia	Taiwan		Aedes albopictus		Academia Sinica, Institute of Biomedical Sciences	3	good
+AF080251		Asia	India				Indian Institute of Science, Microbiology and Cell Biology	3	good
+AF075723							National Institute of Immunology, Virology	3	good
+AF069076							Medical Research Institute, Kanazawa Medical University, Department of Tropical Medicine	3	good
+AF045551							Korea National Institute of Health, Viral Disease	1	good
+AF014161							National Defense Medical Center, Institute of Preventive Medicine	3	good
+AF014160							National Defense Medical Center, Institute of Preventive Medicine	3	good
+AB981184	2013-08-02	Asia	Japan	Yamaguchi	Culex tritaeniorhynchus		Joint Faculty of Veterinary Medicine; 1677-1 Yoshida, Yamaguchi, Yamaguchi 753-8511	1	good
+AB981183	2013-07-25	Asia	Japan	Yamaguchi	Culex tritaeniorhynchus		Joint Faculty of Veterinary Medicine; 1677-1 Yoshida, Yamaguchi, Yamaguchi 753-8511	1	good
+AB920399	2012-07-02	Asia	Japan	Okinawa	Sus scrofa		Department of Biological Science; 2085 Ozato, Nanjo, Okinawa 901-1202	1	good
+AB853904	2010-XX-XX	Asia	Japan	Aichi	Bos taurus		Kyushu Research Station; 2702 Chuzan, Kagoshima, Kagoshima 891-0105	1	good
+AB830335	2009-XX-XX	Asia	Japan	Miyazaki	Bos taurus		Kyushu Research Station; 2702 Chuzan, Kagoshima, Kagoshima 891-0105	1	good
+AB698909	2004-XX-XX	Asia	Japan	Mie	Sus scrofa domesticus		Department of Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB698908	2005-XX-XX	Asia	Japan	Tokyo	Sus scrofa domesticus		Department of Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB698907	2005-XX-XX	Asia	Japan	Tokyo	Sus scrofa domesticus		Department of Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB698906	2005-XX-XX	Asia	Japan	Mie	Sus scrofa domesticus		Department of Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB698905	2006-XX-XX	Asia	Japan	Mie	Sus scrofa domesticus		Department of Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB594829	2003-08-18	Asia	Japan	Tottori	Equus caballus		Laboratory of Veterinary Microbiology, Faculty of Agriculture; 1677-1 Yoshida, Yamaguchi, Yamaguchi 753-8515	1	good
+AB569990	1972-XX-XX	Asia	Japan	Okinawa			Nanjo-city, Okinawa 901-1202	3	good
+AB569989	1973-XX-XX	Asia	Japan	Okinawa			Nanjo-city, Okinawa 901-1202	3	good
+AB569988	1973-XX-XX	Asia	Japan	Okinawa			Nanjo-city, Okinawa 901-1202	3	good
+AB569987	1973-XX-XX	Asia	Japan	Okinawa			Nanjo-city, Okinawa 901-1202	3	good
+AB569985	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB569984	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB569983	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB569982	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB569981	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB569980	1975-XX-XX	Asia	Japan	Okinawa	Sus scrofa		Nanjo-city, Okinawa 901-1202	3	good
+AB551992	1991-XX-XX	Asia	Japan	Tokyo	Sus scrofa		Department of Virology I; 1-23-1 Tayama, Shinjuku, Tokyo 162-8640	3	good
+AB551991	1990-XX-XX	Asia	Japan	Tokyo	Sus scrofa		Department of Virology I; 1-23-1 Tayama, Shinjuku, Tokyo 162-8640	3	good
+AB551990	1975-XX-XX	Asia	Japan	Tokyo	Sus scrofa		Department of Virology I; 1-23-1 Tayama, Shinjuku, Tokyo 162-8640	3	good
+AB471670	2008-08-18	Asia	Japan	Okinawa	Sus scrofa		Nanjo, Okinawa 901-1202	1	good
+AB471669	2008-08-11	Asia	Japan	Okinawa	Sus scrofa		Nanjo, Okinawa 901-1202	1	good
+AB471668	2008-08-04	Asia	Japan	Okinawa	Sus scrofa		Nanjo, Okinawa 901-1202	1	good
+AB471667	2008-07-07	Asia	Japan	Okinawa	Sus scrofa		Nanjo, Okinawa 901-1202	1	good
+AB471666	2008-06-09	Asia	Japan	Okinawa	Sus scrofa		Nanjo, Okinawa 901-1202	1	good
+AB269326	1960-XX-XX	Asia	Japan	Tokyo			Chigasaki, Kanagawa 253-0087	3	good
+AB241119		Asia	Japan	Mie			Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB241118		Asia	Japan	Mie			Virology 1; Toyama 1-23-1, Shinjuku, Tokyo 162-8640	1	good
+AB196926							Takanobu Kato, The Tokyo Metropolitan Institute for Neuroscience, Department of Microbiology; 2-6 Musashidai, Fuchu-shi, Tokyo 183-8526	3	good
+AB196925							Takanobu Kato, The Tokyo Metropolitan Institute for Neuroscience, Department of Microbiology; 2-6 Musashidai, Fuchu-shi, Tokyo 183-8526	3	good
+AB196924							Takanobu Kato, The Tokyo Metropolitan Institute for Neuroscience, Department of Microbiology; 2-6 Musashidai, Fuchu-shi, Tokyo 183-8526	3	good
+AB196923							Takanobu Kato, The Tokyo Metropolitan Institute for Neuroscience, Department of Microbiology; 2-6 Musashidai, Fuchu-shi, Tokyo 183-8526	3	good
+AB051292							Tsutomu Takegami, Kanazawa Medical University, Medical Research Institute; Uchinada, Kahoku, Ishikawa 920-0293	1	good

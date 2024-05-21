@@ -1,0 +1,11 @@
+reference_name: "NC_001437.1"
+traits: ["region", "country", "clade_membership"]
+strain_id_field: "Seq_ID"
+iqtree_model: "HKY+G"
+min_len: 9000
+threads:
+  prefilter: 5
+  prealign: 5
+  align: 10
+  tree: 10
+  refine: 10
