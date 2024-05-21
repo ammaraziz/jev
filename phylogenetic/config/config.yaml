@@ -1,0 +1,42 @@
+strain_id_field: "accession"
+display_strain_field: "strain"
+
+austrakka:
+  data_location: "/home/seq/atoi/jev/"
+
+nextclade:
+  dataset_location: "resources/nc_dataset/"
+
+threads:
+  nextclade: 10
+
+filter:
+  exclude: "config/exclude.txt"
+  group_by: "year region"
+  min_length: 9000
+  sequences_per_group:
+    all: '10'
+    jev1: '36'
+    jev2: '36'
+    jev3: '36'
+    jev4: '36'
+    jev5: '36'
+
+traits:
+  sampling_bias_correction: '3'
+  traits_columns:
+    all: 'region'
+    jev1: 'country region'
+    jev2: 'country region'
+    jev3: 'country region'
+    jev4: 'country region'
+    jev5: 'country region'
+
+clades:
+  clade_definitions:
+    all: 'config/clades_serotypes.tsv'
+    jev1: 'config/clades_genotypes.tsv'
+    jev2: 'config/clades_genotypes.tsv'
+    jev3: 'config/clades_genotypes.tsv'
+    jev4: 'config/clades_genotypes.tsv'
+    jev5: 'config/clades_genotypes.tsv'

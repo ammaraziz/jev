@@ -1,0 +1,22 @@
+from pathlib import Path
+
+configfile: "config/config.yaml"
+
+serotypes = ['all', 'jev1', 'jev2', 'jev3', 'jev4', 'jev5']
+
+rule all:
+    input:
+        auspice_json = expand("auspice/dengue_{serotype}.json", serotype=serotypes)
+
+include: "rules/prepare_sequences.smk"
+include: "rules/construct_phylogeny.smk"
+include: "rules/annotate_phylogeny.smk"
+include: "rules/export.smk"
+
+rule clean:
+    message: "Removing directories: {params}"
+    params:
+        "results",
+        "auspice"
+    shell:
+        "rm -rfv {params}"
