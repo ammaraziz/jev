@@ -3,19 +3,29 @@ from pathlib import Path
 
 min_version("7.7.0")
 configfile: "config/config.yaml"
-GENOTYPES = ['1', '2', '3', '4', '5']
+include: "rules/common.smk"
 
+GENOTYPES = ['1', '2', '3', '4', '5']
 OUTDIR = Path("output")
 RESOURCES = Path("resources")
 
+FETCH = check_ncbi_uploaded()
+
+if FETCH:
+    RULES = [        
+        OUTDIR / "data" / "sequences.ndjson",
+        OUTDIR / "results" / "metadata.tsv",
+        OUTDIR / "results" / "austrakka.csv",
+        OUTDIR / "results" / "sequences.fasta",
+        ]
+else:
+    RULES = OUTDIR / "data" / "checked.txt"
+
+
 rule all:
     input:
-        OUTDIR / "data" / "sequences.ndjson",
-        OUTDIR / "results" / "metadata_all.tsv",
-        OUTDIR / "results" / "sequences_all.fasta",
-        OUTDIR / "results" / "split.status.txt",
-        expand(OUTDIR / "results" / "by_genotype" / "sequences_gt{genotype}.fasta", genotype=GENOTYPES)
+        RULES
 
 include: "rules/fetch_from_ncbi.smk"
 include: "rules/curate.smk"
-include: "rules/split_genotypes.smk"
+include: "rules/genotype_ncbi.smk"
