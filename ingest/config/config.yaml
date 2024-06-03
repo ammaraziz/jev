@@ -1,5 +1,5 @@
 # Sources of sequences to include in the ingest run
-sources: ['genbank'] # , 'austrakka']
+sources: ['genbank']
 # Pathogen NCBI Taxonomy ID
 ncbi_taxon_id: '11072'
 # The list of NCBI Datasets fields to include from NCBI Datasets output
@@ -23,21 +23,6 @@ ncbi_datasets_fields:
   - submitter-names
   - submitter-affiliation
 
-# The list of Austrakka Datasets fields to include from 'austrakka metadata list' output
-austrakka_datasets_ndjson:
-  - Seq_ID
-  - Owner_group
-  - Country
-  - Jurisdiction
-  - Date_coll
-  - Host
-  - Species
-  - Sex
-  - Age_group
-  - Date_onset
-  - Location_of_acquisition
-  - Postcode
-
 # Params for the curate rule for ncbi
 curate:
   # NCBI Fields to rename to Nextstrain field names.
@@ -59,11 +44,6 @@ curate:
     sra-accs: sra_accessions
     submitter-names: authors
     submitter-affiliation: institution
-  austrakka_rename:
-   strain: Seq_ID
-   host: Host
-   country: Country
-   division: Jurisdiction
 
   # Standardized strain name regex
   # Currently accepts any characters because we do not have a clear standard for strain names
@@ -108,15 +88,64 @@ curate:
   sequence_field: 'sequence'
   # Final output columns for the metadata TSV
   metadata_columns: [
-    'Seq_ID',
+    'strain',
+    'genbank_accession',
+    'genbank_accession_rev',
     'date',
     'region',
-    'Country',
-    'Jurisdiction',
-    'Host',
-    'nextclade_genotype', # inferred from virus_tax_id
-    'institution'
+    'country',
+    'division',
+    'location',
+    'length',
+    'host',
+    'release_date',
+    'update_date',
+    'sra_accessions',
+    'abbr_authors',
+    'authors',
+    'institution',
+    'serotype_genbank', # inferred from virus_tax_id
   ]
+
+# austrakka specific 
+austrakka:
+  meta_loc: '/home/seq/atoi/jev/metadata.csv'
+  seq_loc: '/home/seq/atoi/jev/all.fasta'
+  seq_id_field: 'strain'
+  # The list of Austrakka Datasets fields to include from 'austrakka metadata list' output
+  datasets_fields:
+    - Seq_ID
+    - Owner_group
+    - Country
+    - Jurisdiction
+    - Date_coll
+    - Date_coll_precision
+    - Host
+    - Species
+    - Sex
+    - Age_group
+    - Date_onset
+    - Location_of_acquisition
+    - Postcode
+    - Has_sequences
+    - Date_updated
+    - Date_created
+  curate:
+    accession: genbank_accession
+    accession-rev: genbank_accession_rev
+    isolate-lineage: strain
+    sourcedb: database
+    geo-region: region
+    geo-location: location
+    host-name: host
+    isolate-collection-date: date
+    release-date: release_date
+    update-date: update_date
+    virus-tax-id: virus_tax_id
+    virus-name: virus_name
+    sra-accs: sra_accessions
+    submitter-names: authors
+    submitter-affiliation: institution
 
 nextclade:
   min_seed_cover: 0.1

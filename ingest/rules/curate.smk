@@ -16,9 +16,10 @@ rule fetch_general_geolocation_rules:
     output:
         general_geolocation_rules= OUTDIR / "data" / "general-geolocation-rules.tsv",
     params:
-        geolocation_rules_url=config["curate"]["geolocation_rules_url"],
+        geolocation_rules_url=config["curate"]["geolocation_rules_url"]
+    log: OUTDIR / "logs" / "curl.txt"
     shell:"""
-    curl {params.geolocation_rules_url} > {output.general_geolocation_rules}
+    curl {params.geolocation_rules_url} > {output.general_geolocation_rules} 2> {log}
     """
 
 rule concat_geolocation_rules:
@@ -43,12 +44,11 @@ rule curate:
         all_geolocation_rules=OUTDIR / "data" / "all-geolocation-rules.tsv",
         annotations=config["curate"]["annotations"],
     output:
-        metadata=OUTDIR / "results" / "metadata_all.tsv",
-        sequences=OUTDIR / "results" / "sequences_all.fasta",
+        metadata=OUTDIR / "data" / "metadata_all.tsv",
+        sequences=OUTDIR / "results" / "sequences.fasta",
     log: OUTDIR / "logs" / "curate.txt",
     params:
         field_map=format_field_map(config["curate"]["field_map"]),
-        field_map_austrakka=format_field_map(config["curate"]["austrakka_rename"]),
         strain_regex=config["curate"]["strain_regex"],
         strain_backup_fields=config["curate"]["strain_backup_fields"],
         date_fields=config["curate"]["date_fields"],
@@ -88,8 +88,6 @@ rule curate:
         | ./vendored/merge-user-metadata \
             --annotations {input.annotations} \
             --id-field {params.annotations_id} \
-        | ./vendored/transform-field-names \
-            --field-map {params.field_map_austrakka} \
         | ./bin/ndjson-to-tsv-and-fasta \
             --metadata-columns {params.metadata_columns} \
             --metadata {output.metadata} \
