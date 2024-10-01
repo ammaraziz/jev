@@ -12,7 +12,7 @@ rule genotype:
     message: "Running Nextclade"
     input:
         sequences=OUTDIR / "results" / "sequences.fasta",
-        dataset="resources/nc_dataset/",
+        dataset=config['nc_dataset_loc']
     output:
         results=OUTDIR / "data" / "nextclade_results" / "nextclade.tsv",
     threads: 4
@@ -60,12 +60,17 @@ rule append_countrycodes:
         metadata=rules.append_nextclade_columns.output.metadata,
         country=RESOURCES / "country_codes.tsv"
     output:
-        metadata=OUTDIR / "results" / "metadata.tsv"
+        metadata=OUTDIR / "results" / "metadata.tsv",
+        metadata_good=OUTDIR / "results" / "metadata.good.tsv"
     shell:"""
     csvtk -t join \
         --left-join \
         {input.metadata} {input.country} \
         --fields "country" > {output.metadata}
+
+    csvtk -t filter2 \
+    {output.metadata} \
+    --filter '${{qc.overallStatus}}=="good"' > {output.metadata_good}
     """
 
 rule austrakka:
@@ -98,43 +103,45 @@ rule austrakka:
     --out-file {output.metadata}
     """
 
-# rule split_sequences_by_genotype:
-#     """
-#     Split the data by genotype based on the NCBI metadata.
-#     """
-#     input:
-#         metadata = OUTDIR / "results" / "metadata_final.tsv",
-#         sequences = OUTDIR / "results" / "sequences_all.fasta"
-#     output:
-#         sequences = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.fasta",
-#         metadata = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.tsv"
-#     params:
-#         id_field="strain",
-#         filter_by = lambda w: "clade==" + w.genotype + "    "
-#     log: OUTDIR / "logs" / "augur.{genotype}.log.txt"
-#     shell:"""
-#     augur filter \
-#         --sequences {input.sequences} \
-#         --metadata {input.metadata} \
-#         --metadata-id-columns {params.id_field} \
-#         --query "{params.filter_by}" \
-#         --empty-output-reporting silent \
-#         --output-sequences {output.sequences} \
-#         --output-metadata {output.metadata} > {log} 2>&1
-#     """
+rule split_sequences_by_genotype:
+    """
+    Split the data by genotype based on the NCBI metadata.
+    """
+    input:
+        metadata = OUTDIR / "results" / "metadata.good.tsv",
+        sequences = OUTDIR / "results" / "sequences.fasta"
+    output:
+        sequences = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.fasta",
+        metadata = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.tsv"
+    params:
+        id_field = "strain",
+        filter_by = lambda w: "clade==" + w.genotype,
+        min_length = config['min_length'],
+    log: OUTDIR / "logs" / "augur.{genotype}.log.txt"
+    shell:"""
+    augur filter \
+        --sequences {input.sequences} \
+        --metadata {input.metadata} \
+        --metadata-id-columns {params.id_field} \
+        --query "{params.filter_by}" \
+        --min-length {params.min_length} \
+        --empty-output-reporting silent \
+        --output-sequences {output.sequences} \
+        --output-metadata {output.metadata} > {log} 2>&1
+    """
 
-# rule clean_empty_sequences:
-#     """
-#     Removing empty sequences
-#     """
-#     input:
-#         sequences = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.fasta"
-#     output:
-#         status = OUTDIR / "results" / "by_genotype" / "{genotype}.status"
-#     params:
-#         indir = OUTDIR / "results" / "by_genotype"
-#     shell:"""
-#     find {params.indir} -iname "*.txt" -type f -empty -delete
-#     find {params.indir} -iname "*.fasta" -type f -empty -delete
-#     touch {output.status}
-#     """
+rule clean_empty_sequences:
+    """
+    Removing empty sequences
+    """
+    input:
+        sequences = OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.fasta"
+    output:
+        status = OUTDIR / "results" / "by_genotype" / "{genotype}.status"
+    params:
+        indir = OUTDIR / "results" / "by_genotype"
+    shell:"""
+    find {params.indir} -iname "*.txt" -type f -empty -delete
+    find {params.indir} -iname "*.fasta" -type f -empty -delete
+    touch {output.status}
+    """

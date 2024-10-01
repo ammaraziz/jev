@@ -1,37 +1,24 @@
 """
 This part of the workflow prepares sequences for constructing the phylogenetic tree.
-REQUIRED INPUTS:
-    metadata_url    = url to metadata.tsv.zst
-    sequences_url   = url to sequences.fasta.zst
-    reference   = path to reference sequence or genbank
-OUTPUTS:
-    prepared_sequences = results/aligned.fasta
+
+Your sequences should be be in input/sequences.fasta
+Include a input/metadata.tsv with at minimum these headings: 
+ - strain
+ - date
+ - country
+ - host 
 """
 
 OUTDIR = Path("output")
-INDIR = Path("indir")
+INDIR = Path("input")
 
 # you must be logged into the server to run this pipeline or this step fails
-rule get_austrakka_sequences:
-    message:"Retreiving Austrakka data"
-    input:
-        sequences = Path(config['austrakka']['data_location']) / "all.fasta"
-        metadata = Path(config['austrakka']['data_location']) / "all.tsv"
-    output:
-        sequences = INDIR / "data" / "austrakka_sequences_raw.fasta",
-        metadata = INDIR / "data" / "metadata_all.tsv"
-    shell:
-        """
-        cp {input.sequences} {output.sequences}
-        cp {out.metadata} {out.metadata}
-        """
+# checks if config variable austrakka is sset
 
-# new rule to genotype and qc sequences ?????
-# maybe this should be in ingest???
-rule qc:
-    message: "Running nextclade to genotype and qc sequences"
+rule nextclade:
+    message: "Running nextclade to genotype and qc input sequences"
     input:
-        sequences = rules.get_austrakka_sequences.output.sequences
+        sequences = INDIR / "sequences"
     output:
         tsv = OUTDIR / "nextclade" / "nextclade.tsv"
     params:
@@ -44,58 +31,67 @@ rule qc:
         {input.sequences} \
         --retry-reverse-complement \
         --gap-alignment-side left \
-        --output-tsv {output.tsv} \
+        --output-tsv - | \
+        csvtk -t cut \
+        -f 'seqName,clade,qc.overallStatus' > {output.tsv}
     """
-# new rule filter_len+split by genotype to create JEV1/2/3/4/5
 
+rule create_metadata:
+    input:
+        clades = rules.nextclade.output.tsv,
+        metadata = INDIR / "metadata.tsv",
+    output:
+        metadata = OUTDIR / "metadata.tsv",
+    shell:"""
+    csvtk -t join \
+        --left-join \
+        --fields "1;1" \
+        {input.clades} {input.metadata} > {output.metadata}
+    """
 
-# rule decompress:
-#     """Parsing fasta into sequences and metadata"""
-#     input:
-#         sequences = "data/sequences_{serotype}.fasta.zst",
-#         metadata = "data/metadata_{serotype}.tsv.zst"
-#     output:
-#         sequences = "data/sequences_{serotype}.fasta",
-#         metadata = "data/metadata_{serotype}.tsv"
-#     shell:
-#         """
-#         zstd -d -c {input.sequences} > {output.sequences}
-#         zstd -d -c {input.metadata} > {output.metadata}
-#         """
-
-# remove all filtering apart from sequence length
 rule filter:
     """
     Filtering to
       - {params.sequences_per_group} sequence(s) per {params.group_by!s}
       - excluding strains in {input.exclude}
       - minimum genome length of {params.min_length}
-      - excluding strains with missing region, country or date metadata
     """
     input:
-        sequences = "data/sequences_{serotype}.fasta",
-        metadata = "data/metadata_{serotype}.tsv",
-        exclude = config["filter"]["exclude"],
+        sequences = INDIR / "sequences.fasta",
+        metadata = rules.create_metadata.output.metadata,
     output:
-        sequences = "results/filtered_{serotype}.fasta"
+        sequences = "results/filtered_{genotype}.fasta"
     params:
         group_by = config['filter']['group_by'],
-        sequences_per_group = lambda wildcards: config['filter']['sequences_per_group'][wildcards.serotype],
         min_length = config['filter']['min_length'],
         strain_id = config.get("strain_id_field", "strain"),
-    shell:
+        exclude = config["filter"]["exclude"],
+    shell:"""
+    augur filter \
+        --sequences {input.sequences} \
+        --metadata {input.metadata} \
+        --metadata-id-columns {params.strain_id} \
+        --exclude {input.exclude} \
+        --output {output.sequences} \
+        --group-by {params.group_by} \
+        --sequences-per-group {params.sequences_per_group} \
+        --min-length {params.min_length} \
+        --exclude-where country=? region=? date=?
         """
-        augur filter \
-            --sequences {input.sequences} \
-            --metadata {input.metadata} \
-            --metadata-id-columns {params.strain_id} \
-            --exclude {input.exclude} \
-            --output {output.sequences} \
-            --group-by {params.group_by} \
-            --sequences-per-group {params.sequences_per_group} \
-            --min-length {params.min_length} \
-            --exclude-where country=? region=? date=? \
-        """
+
+rule conglomerate:
+    input:
+        at_seq = rules.get_austrakka_sequences.output.sequence,
+        at_meta = rules.get_austrakka_sequences.output.metadata,
+        ncbi_seq = rules.get_ncbi_data.output.sequence,
+        ncbi_meta = rules.get_ncbi_data.output.metadata,
+    output:
+        sequences = OUTDIR / "data" / "sequences.all.fasta",
+        metadata = OUTDIR / "data" / "metadata.all.tsv"
+    shell:"""
+    cp {at_seq} {ncbi_seq} > {output.sequences}
+    csvtk -t concat {at_metadata} {ncbi_metadata} > {output.metadata}
+    """
 
 rule align:
     """
@@ -103,17 +99,16 @@ rule align:
       - filling gaps with N
     """
     input:
-        sequences = "results/filtered_{serotype}.fasta",
-        reference = "config/reference_dengue_{serotype}.gb"
+        sequences = "results/filtered_{genotype}.fasta",
+        reference = "config/reference_dengue_{genotype}.gb"
     output:
-        alignment = "results/aligned_{serotype}.fasta"
-    shell:
-        """
-        augur align \
-            --sequences {input.sequences} \
-            --reference-sequence {input.reference} \
-            --output {output.alignment} \
-            --fill-gaps \
-            --remove-reference \
-            --nthreads 1
+        alignment = "results/aligned_{genotype}.fasta"
+    shell:"""
+    augur align \
+        --sequences {input.sequences} \
+        --reference-sequence {input.reference} \
+        --output {output.alignment} \
+        --fill-gaps \
+        --remove-reference \
+        --nthreads 1
         """

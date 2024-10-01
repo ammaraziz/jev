@@ -30,10 +30,11 @@ def check_ncbi_uploaded(p = "resources/ncbi_date_last_checked.txt"):
     
     global FETCH
     if output == '0':
-        print(f"No new sequences for: {config['ncbi_taxon_id']}")
+        print(f"No new sequences for taxon id {config['ncbi_taxon_id']}")
         return False
     else:
-        print(f"{output} new sequences for: {config['ncbi_taxon_id']}")
+        print(f"{output} new sequences for taxon id {config['ncbi_taxon_id']}")
         return True
 
+    write_date_checked()
     

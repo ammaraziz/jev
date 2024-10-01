@@ -2,8 +2,6 @@
 
 This is the ingest pipeline for JEV virus sequences. Amended from Nextstrain Dengue Ingest pipeline.
 
-Below is not correct. Ignore.
-
 ## Usage
 
 All workflows are expected to the be run from the top level pathogen repo directory.
@@ -27,16 +25,6 @@ A pair of files for each dengue serotype (denv1 - denv4)
 - `ingest/results/metadata_denv4.tsv`
 - `ingest/results/sequences_denv4.fasta`
 
-Run the complete ingest pipeline and upload results to AWS S3 with
-
-```sh
-nextstrain build \
-    --env AWS_ACCESS_KEY_ID \
-    --env AWS_SECRET_ACCESS_KEY \
-    ingest \
-        upload_all \
-        --configfile build-configs/nextstrain-automation/config.yaml
-```
 
 ### Adding new sequences not from GenBank
 
@@ -67,22 +55,6 @@ Do the following to include sequences from static FASTA files.
 
 Configuration takes place in `defaults/config.yaml` by default.
 Optional configs for uploading files are in `build-configs/nextstrain-automation/config.yaml`.
-
-### Environment Variables
-
-The complete ingest pipeline with AWS S3 uploads uses the following environment variables:
-
-#### Required
-
-- `AWS_ACCESS_KEY_ID`
-- `AWS_SECRET_ACCESS_KEY`
-
-#### Optional
-
-These are optional environment variables used in our automated pipeline.
-
-- `GITHUB_RUN_ID` - provided via [`github.run_id` in a GitHub Action workflow](https://docs.github.com/en/actions/learn-github-actions/contexts#github-context)
-- `AWS_BATCH_JOB_ID` - provided via [AWS Batch Job environment variables](https://docs.aws.amazon.com/batch/latest/userguide/job_env_vars.html)
 
 ## Input data
 

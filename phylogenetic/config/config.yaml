@@ -1,11 +1,9 @@
 strain_id_field: "accession"
 display_strain_field: "strain"
 
-austrakka:
-  data_location: "/home/seq/atoi/jev/"
-
-nextclade:
-  dataset_location: "resources/nc_dataset/"
+datasets:
+  nextclade: "../nextclade_data/resources/nc_dataset/"
+  backbone: "resources/backbone/"
 
 threads:
   nextclade: 10
@@ -13,7 +11,7 @@ threads:
 filter:
   exclude: "config/exclude.txt"
   group_by: "year region"
-  min_length: 9000
+  min_length: 10000
   sequences_per_group:
     all: '10'
     jev1: '36'

@@ -1,6 +1,6 @@
 reference_name: "NC_001437.1"
 traits: ["region", "country", "clade_membership"]
-strain_id_field: "Seq_ID"
+strain_id_field: "strain"
 iqtree_model: "HKY+G"
 min_len: 9000
 threads:

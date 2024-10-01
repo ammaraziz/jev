@@ -1,5 +1,8 @@
 # Sources of sequences to include in the ingest run
 sources: ['genbank']
+min_length: 10000
+# jev nextclade dataset location
+nc_dataset_loc: "../nextclade_dataset/resources/nc_dataset"
 # Pathogen NCBI Taxonomy ID
 ncbi_taxon_id: '11072'
 # The list of NCBI Datasets fields to include from NCBI Datasets output
@@ -111,7 +114,7 @@ curate:
 austrakka:
   meta_loc: '/home/seq/atoi/jev/metadata.csv'
   seq_loc: '/home/seq/atoi/jev/all.fasta'
-  seq_id_field: 'strain'
+  seq_id_field: 'Seq_ID'
   # The list of Austrakka Datasets fields to include from 'austrakka metadata list' output
   datasets_fields:
     - Seq_ID

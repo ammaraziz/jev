@@ -2,13 +2,15 @@
 Construct annotationed tree for use in nextclade
 
 Inputs from ingest pipeline:
-    metadata            = ingest/results/metadata_all.fasta
-    prepared_sequences  = ingest/results/sequences_all.fasta
+    metadata   = ingest/output/metadata.tsv
+    sequences  = ingest/output/sequences.fasta
+    austrakka  = ingest/output/austrakka.csv - Austrakka formatted csv
 """
 
 from pathlib import Path
 configfile: "config/config.yaml"
 
+INGEST = Path("../ingest/output/results")
 INDIR = Path("input")
 OUTDIR = Path("output")
 
@@ -21,12 +23,12 @@ rule all:
         OUTDIR / "nodedata" / "nt-muts.json",
         OUTDIR / "nodedata" / "aa-muts.json",
         OUTDIR / "nodedata" / "traits.json",
-        OUTDIR / "nc_dataset" / "tree.json",
+        OUTDIR / "auspice" / "tree.json",
 
 rule prefilter:
     message: "prefiltering sequences of small length"
     input:
-        sequences = INDIR / "sequences.fasta",
+        sequences = INGEST / "sequences.fasta",
     output:
         filtered = OUTDIR / "preprocessing" / "prefiltered.fasta" 
     params:
@@ -128,7 +130,7 @@ rule refine:
     input:
         alignment = rules.align.output.alignment,
         tree = rules.tree.output.tree,
-        metadata = INDIR / "metadata.tsv",
+        metadata = INGEST / "metadata.tsv",
     output:
         tree = OUTDIR / "tree" / "tree.refined.nwk",
         node_data = OUTDIR / "nodedata" / "branch-lengths.json",
@@ -150,6 +152,7 @@ rule refine:
         --timetree \
         --coalescent {params.coalescent} \
         --date-confidence \
+        --stochastic-resolve \
         --date-inference {params.date_inference} \
         --clock-filter-iqd {params.clock_filter_iqd} \
         --verbosity 0 2> {log}
@@ -200,7 +203,7 @@ rule traits:
     """
     input:
         tree = rules.refine.output.tree,
-        metadata = INDIR / "metadata_all.tsv",
+        metadata = INGEST / "metadata.tsv",
     output:
         node_data = OUTDIR / "nodedata" / "traits.json",
     params:
@@ -221,10 +224,9 @@ rule export:
     """Exporting data files for auspice"""
     input:
         tree = rules.refine.output.tree,
-        metadata = INDIR / "metadata_all.tsv",
+        metadata = INGEST / "metadata.tsv",
         branch_lengths = rules.refine.output.node_data,
         traits = rules.traits.output.node_data,
-        #clades = "results/clades_{serotype}.json",
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
         auspice_config = "resources/auspice.json",

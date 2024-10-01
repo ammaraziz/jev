@@ -2,7 +2,7 @@
 This part of the workflow constructs the phylogenetic tree.
 REQUIRED INPUTS:
     metadata            = data/metadata_all.tsv
-    prepared_sequences  = results/aligned_serotype.fasta
+    prepared_sequences  = results/aligned_genotype.fasta
 OUTPUTS:
     tree            = results/tree.nwk
     branch_lengths  = results/branch_lengths.json
@@ -15,9 +15,9 @@ See Augur's usage docs for these commands for more details.
 rule tree:
     """Building tree"""
     input:
-        alignment = "results/aligned_{serotype}.fasta"
+        alignment = "results/aligned_{genotype}.fasta"
     output:
-        tree = "results/tree-raw_{serotype}.nwk"
+        tree = "results/tree-raw_{genotype}.nwk"
     shell:
         """
         augur tree \
@@ -35,12 +35,12 @@ rule refine:
       - filter tips more than {params.clock_filter_iqd} IQDs from clock expectation
     """
     input:
-        tree = "results/tree-raw_{serotype}.nwk",
-        alignment = "results/aligned_{serotype}.fasta",
-        metadata = "data/metadata_{serotype}.tsv"
+        tree = "results/tree-raw_{genotype}.nwk",
+        alignment = "results/aligned_{genotype}.fasta",
+        metadata = "data/metadata_{genotype}.tsv"
     output:
-        tree = "results/tree_{serotype}.nwk",
-        node_data = "results/branch-lengths_{serotype}.json",
+        tree = "results/tree_{genotype}.nwk",
+        node_data = "results/branch-lengths_{genotype}.json",
     params:
         coalescent = "const",
         date_inference = "marginal",

@@ -11,14 +11,6 @@ Produces final output as
     sequences_ndjson = "data/sequences.ndjson"
 """
 
-rule checked:
-    output:
-        status = OUTDIR / "status" / "checked.txt"
-    run:
-        print("NCBI sequenced up to date. Nothin to do.")
-        with open(output.status, "w") as f:
-            f.write("ignore this file")
-
 def _get_all_sources(wildcards):
     return [OUTDIR / f"data/{source}.ndjson" for source in config["sources"]]
 
@@ -32,7 +24,7 @@ rule fetch_ncbi_dataset_package:
         released_after=read_date_checked(),
     shell:"""
     datasets download virus genome \
-        taxon {params.ncbi_taxon_id} \
+        taxon {params.ncbi_taxon_id:q} \
         --released-after {params.released_after} \
         --filename {output.dataset_package}
     """
@@ -89,29 +81,6 @@ rule format_ncbi_datasets_ndjson:
         --duplicate-reporting warn \
         2> {log} > {output.ndjson}
     """
-
-# rule from_austrakka_datasets_ndjson:
-#     input:
-#         austrakka_sequences = config['austrakka']['seq_loc'],
-#         austrakka_metadata = config['austrakka']['meta_loc'],
-#     output:
-#         ndjson=OUTDIR / "data" / "austrakka.ndjson",
-#     params:
-#         ncbi_datasets_fields=",".join(config['austrakka']['datasets_fields']),
-#         seq_id_column = config['austrakka']['seq_id_field'],
-#         seq_field = "sequence",
-#     log:
-#         OUTDIR / "logs" / "format_austrakka_datasets_ndjson.txt",
-#     shell:"""
-#     augur curate passthru \
-#         --metadata {input.austrakka_metadata} \
-#         --fasta {input.austrakka_sequences} \
-#         --seq-id-column {params.seq_id_column} \
-#         --seq-field {params.seq_field} \
-#         --unmatched-reporting warn \
-#         --duplicate-reporting warn \
-#         2> {log} > {output.ndjson}
-#     """
 
 rule fetch_all_sequences:
     input:

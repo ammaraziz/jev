@@ -20,17 +20,17 @@ See Augur's usage docs for these commands for more details.
 rule export:
     """Exporting data files for auspice"""
     input:
-        tree = "results/tree_{serotype}.nwk",
-        metadata = "data/metadata_{serotype}.tsv",
-        branch_lengths = "results/branch-lengths_{serotype}.json",
-        traits = "results/traits_{serotype}.json",
-        clades = "results/clades_{serotype}.json",
-        nt_muts = "results/nt-muts_{serotype}.json",
-        aa_muts = "results/aa-muts_{serotype}.json",
-        auspice_config = "config/auspice_config_{serotype}.json",
+        tree = "results/tree_{genotype}.nwk",
+        metadata = "data/metadata_{genotype}.tsv",
+        branch_lengths = "results/branch-lengths_{genotype}.json",
+        traits = "results/traits_{genotype}.json",
+        clades = "results/clades_{genotype}.json",
+        nt_muts = "results/nt-muts_{genotype}.json",
+        aa_muts = "results/aa-muts_{genotype}.json",
+        auspice_config = "config/auspice_config_{genotype}.json",
     output:
-        auspice_json = "results/raw_dengue_{serotype}.json",
-        root_sequence = "results/raw_dengue_{serotype}_root-sequence.json",
+        auspice_json = "results/raw_dengue_{genotype}.json",
+        root_sequence = "results/raw_dengue_{genotype}_root-sequence.json",
     params:
         strain_id = config.get("strain_id_field", "strain"),
     shell:
@@ -47,12 +47,12 @@ rule export:
 
 rule final_strain_name:
     input:
-        auspice_json="results/raw_dengue_{serotype}.json",
-        metadata="data/metadata_{serotype}.tsv",
-        root_sequence="results/raw_dengue_{serotype}_root-sequence.json",
+        auspice_json="results/raw_dengue_{genotype}.json",
+        metadata="data/metadata_{genotype}.tsv",
+        root_sequence="results/raw_dengue_{genotype}_root-sequence.json",
     output:
-        auspice_json="auspice/dengue_{serotype}.json",
-        root_sequence="auspice/dengue_{serotype}_root-sequence.json",
+        auspice_json="auspice/dengue_{genotype}.json",
+        root_sequence="auspice/dengue_{genotype}_root-sequence.json",
     params:
         strain_id=config.get("strain_id_field", "strain"),
         display_strain_field=config.get("display_strain_field", "strain"),

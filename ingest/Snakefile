@@ -1,7 +1,6 @@
 from snakemake.utils import min_version
 from pathlib import Path
 
-min_version("7.7.0")
 configfile: "config/config.yaml"
 include: "rules/common.smk"
 
@@ -17,10 +16,11 @@ if FETCH:
         OUTDIR / "results" / "metadata.tsv",
         OUTDIR / "results" / "austrakka.csv",
         OUTDIR / "results" / "sequences.fasta",
+        expand(OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.fasta", genotype=GENOTYPES),
+        expand(OUTDIR / "results" / "by_genotype" / "jev_gt{genotype}.tsv", genotype=GENOTYPES),
         ]
 else:
     RULES = OUTDIR / "data" / "checked.txt"
-
 
 rule all:
     input:
@@ -28,4 +28,4 @@ rule all:
 
 include: "rules/fetch_from_ncbi.smk"
 include: "rules/curate.smk"
-include: "rules/genotype_ncbi.smk"
+include: "rules/qc_split.smk"

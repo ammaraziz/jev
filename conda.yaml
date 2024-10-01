@@ -9,3 +9,5 @@ dependencies:
   - augur=24.0
   - tsv-utils
   - zstd
+  - snakemake=7.32
+  - ncbi-datasets-cli
