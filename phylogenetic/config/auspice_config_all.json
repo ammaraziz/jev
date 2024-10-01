@@ -1,9 +1,9 @@
 {
   "title": "Real-time tracking of dengue virus evolution",
   "maintainers": [
-    {"name": "Trevor Bedford", "url": "http://bedford.io/team/trevor-bedford/"}
+    {"name": "Ammar Aziz", "url": "https://github.com/ammaraziz/jev"}
   ],
-  "build_url": "https://github.com/nextstrain/dengue",  
+  "build_url": "https://github.com/ammaraziz/jev",  
   "colorings": [
     {
       "key": "gt",
@@ -16,7 +16,7 @@
       "type": "continuous"
     },
     {
-      "key": "country",
+      "key": "Country",
       "title": "Country",
       "type": "categorical"
     },
@@ -26,23 +26,27 @@
       "type": "categorical"
     },
     {
+      "key": "Host",
+      "title": "Host",
+      "type": "categorical"
+    },
+    {
       "key": "clade_membership",
-      "title": "Serotype",
+      "title": "Genotype",
       "type": "categorical"
     }
   ],
   "geo_resolutions": [
-    "country",
+    "Country",
     "region"
   ],
   "display_defaults": {
     "map_triplicate": true,
-    "color_by": "clade_membership",
+    "color_by": "Host",
     "distance_measure": "div"
   },
   "filters": [
-    "country",
-    "region",
-    "author"
+    "Country",
+    "region"
   ]
 }

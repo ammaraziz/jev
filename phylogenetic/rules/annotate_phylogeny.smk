@@ -24,10 +24,10 @@ to the ones produced by Augur commands.
 rule ancestral:
     """Reconstructing ancestral sequences and mutations"""
     input:
-        tree = "results/tree_{genotype}.nwk",
-        alignment = "results/aligned_{genotype}.fasta"
+        tree = OUTDIR / "results" / "tree_jev{genotype}.nwk",
+        alignment = OUTDIR / "results" / "aligned_jev{genotype}.fasta"
     output:
-        node_data = "results/nt-muts_{genotype}.json"
+        node_data = OUTDIR / "results" / "nt-muts_jev{genotype}.json"
     params:
         inference = "joint"
     shell:
@@ -42,11 +42,11 @@ rule ancestral:
 rule translate:
     """Translating amino acid sequences"""
     input:
-        tree = "results/tree_{genotype}.nwk",
-        node_data = "results/nt-muts_{genotype}.json",
-        reference = "config/reference_dengue_{genotype}.gb"
+        tree = OUTDIR / "results" / "tree_jev{genotype}.nwk",
+        node_data = OUTDIR / "results" / "nt-muts_jev{genotype}.json",
+        reference = Path("resources") / "references" / "jev_gt{genotype}.gb"
     output:
-        node_data = "results/aa-muts_{genotype}.json"
+        node_data = OUTDIR / "results" / "aa-muts_jev{genotype}.json"
     shell:
         """
         augur translate \
@@ -62,40 +62,21 @@ rule traits:
       - increase uncertainty of reconstruction by {params.sampling_bias_correction} to partially account for sampling bias
     """
     input:
-        tree = "results/tree_{genotype}.nwk",
-        metadata = "data/metadata_{genotype}.tsv"
+        tree = rules.refine.output.tree,
+        metadata = rules.filter.output.metadata,
     output:
-        node_data = "results/traits_{genotype}.json",
+        node_data = OUTDIR / "results" / "traits_jev_gt{genotype}.json",
     params:
-        columns = lambda wildcards: config['traits']['traits_columns'][wildcards.genotype],
+        columns = lambda w: config['traits']['traits_columns'][f"gt{w.genotype}"],
         sampling_bias_correction = config['traits']['sampling_bias_correction'],
         strain_id = config.get("strain_id_field", "strain"),
-    shell:
-        """
-        augur traits \
-            --tree {input.tree} \
-            --metadata {input.metadata} \
-            --metadata-id-columns {params.strain_id} \
-            --output {output.node_data} \
-            --columns {params.columns} \
-            --confidence \
-            --sampling-bias-correction {params.sampling_bias_correction}
-        """
-
-rule clades:
-    """Annotating genotypes / genotypes"""
-    input:
-        tree = "results/tree_{genotype}.nwk",
-        nt_muts = "results/nt-muts_{genotype}.json",
-        aa_muts = "results/aa-muts_{genotype}.json",
-        clade_defs = lambda wildcards: config['clades']['clade_definitions'][wildcards.genotype],
-    output:
-        clades = "results/clades_{genotype}.json"
-    shell:
-        """
-        augur clades \
-            --tree {input.tree} \
-            --mutations {input.nt_muts} {input.aa_muts} \
-            --clades {input.clade_defs} \
-            --output {output.clades}
-        """
+    shell:"""
+    augur traits \
+        --tree {input.tree} \
+        --metadata {input.metadata} \
+        --metadata-id-columns {params.strain_id} \
+        --output {output.node_data} \
+        --columns {params.columns} \
+        --confidence \
+        --sampling-bias-correction {params.sampling_bias_correction}
+    """

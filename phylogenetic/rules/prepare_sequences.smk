@@ -1,8 +1,8 @@
 """
 This part of the workflow prepares sequences for constructing the phylogenetic tree.
 
-Your sequences should be be in input/sequences.fasta
-Include a input/metadata.tsv with at minimum these headings: 
+Your sequences should be be in input/sequences_{genotype}.fasta
+Include a input/metadata_{genotype}.tsv with at minimum these headings: 
  - strain
  - date
  - country
@@ -48,36 +48,6 @@ rule create_metadata:
         --fields "1;1" \
         {input.clades} {input.metadata} > {output.metadata}
     """
-
-rule filter:
-    """
-    Filtering to
-      - {params.sequences_per_group} sequence(s) per {params.group_by!s}
-      - excluding strains in {input.exclude}
-      - minimum genome length of {params.min_length}
-    """
-    input:
-        sequences = INDIR / "sequences.fasta",
-        metadata = rules.create_metadata.output.metadata,
-    output:
-        sequences = "results/filtered_{genotype}.fasta"
-    params:
-        group_by = config['filter']['group_by'],
-        min_length = config['filter']['min_length'],
-        strain_id = config.get("strain_id_field", "strain"),
-        exclude = config["filter"]["exclude"],
-    shell:"""
-    augur filter \
-        --sequences {input.sequences} \
-        --metadata {input.metadata} \
-        --metadata-id-columns {params.strain_id} \
-        --exclude {input.exclude} \
-        --output {output.sequences} \
-        --group-by {params.group_by} \
-        --sequences-per-group {params.sequences_per_group} \
-        --min-length {params.min_length} \
-        --exclude-where country=? region=? date=?
-        """
 
 rule conglomerate:
     input:

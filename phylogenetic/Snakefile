@@ -2,13 +2,14 @@ from pathlib import Path
 
 configfile: "config/config.yaml"
 
-genotypes = ['all', 'jev1', 'jev2', 'jev3', 'jev4', 'jev5']
+GENOTYPES = ['1', '2', '3', '4', '5']
+OUTDIR = Path("output")
 
 rule all:
     input:
-        auspice_json = expand("auspice/dengue_{genotype}.json", genotype=genotypes)
+        expand(OUTDIR / "auspice" / "jev{genotype}.json", genotype=GENOTYPES),
 
-include: "rules/prepare_sequences.smk"
+include: "rules/prepare_sequences.at.smk"
 include: "rules/construct_phylogeny.smk"
 include: "rules/annotate_phylogeny.smk"
 include: "rules/export.smk"
