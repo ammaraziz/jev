@@ -3,16 +3,18 @@ display_strain_field: "strain"
 
 datasets:
   nextclade: "../nextclade_dataset/resources/nc_dataset/"
-  austrakka: "/Users/aaziz/Desktop/at"
   backbone: "resources/backbone/"
-  # austrakka: "/home/seq/atoi/jev/"
+  austrakka: "resources/example/"
 
 threads:
   nextclade: 8
+  align: 8
+  tree: 8
+
+iqtree_model: "HKY+G"
 
 filter:
   exclude: "config/exclude.txt"
-  group_by: "year region"
   min_length: 10000
 
 traits:

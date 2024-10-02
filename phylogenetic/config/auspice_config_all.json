@@ -29,11 +29,6 @@
       "key": "Host",
       "title": "Host",
       "type": "categorical"
-    },
-    {
-      "key": "clade_membership",
-      "title": "Genotype",
-      "type": "categorical"
     }
   ],
   "geo_resolutions": [

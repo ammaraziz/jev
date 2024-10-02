@@ -62,13 +62,15 @@ rule filter:
     params:
         min_length = config['filter']['min_length'],
         strain_id = config.get("strain_id_field", "strain"),
-        genotype_query = lambda w: "clade==" + w.genotype
+        genotype_query = lambda w: "clade==" + w.genotype,
+        exclude = config['filter']['exclude']
     shell:"""
     augur filter \
         --sequences {input.sequences} \
         --metadata {input.metadata} \
         --metadata-id-columns {params.strain_id} \
         --query "{params.genotype_query}" \
+        --exclude {params.exclude} \
         --output {output.sequences} \
         --output-metadata {output.metadata} \
         --min-length {params.min_length}
@@ -97,8 +99,8 @@ rule align:
         sequences = rules.conglomerate.output.all_seq,
         reference = Path("resources") / "references" / "jev_gt{genotype}.gb"
     output:
-        alignment = OUTDIR / "results" / "aligned_jev{genotype}.fasta"
-    threads: 8
+        alignment = OUTDIR / "jev{genotype}" / "aligned_jev{genotype}.fasta"
+    threads: config['threads']['align']
     shell:"""
     augur align \
         --sequences {input.sequences} \

@@ -10,12 +10,17 @@ rule tree:
     input:
         alignment = rules.align.output.alignment
     output:
-        tree = OUTDIR / "results" / "tree-raw_jev{genotype}.nwk"
+        tree = OUTDIR / "jev{genotype}" / "tree-raw_jev{genotype}.nwk"
+    params:
+        substitution = config['iqtree_model']
+    threads: config['threads']['tree']
     shell:"""
     augur tree \
         --alignment {input.alignment} \
         --output {output.tree} \
-        --nthreads 1
+        --nthreads {threads} \
+        --override-default-args \
+        --substitution-model {params.substitution}
     """
 
 rule refine:
@@ -31,8 +36,8 @@ rule refine:
         alignment = rules.align.output.alignment,
         metadata = rules.conglomerate.output.all_metadata
     output:
-        tree = OUTDIR / "results" / "tree_jev{genotype}.nwk",
-        node_data = OUTDIR / "results" / "branch-lengths_jev{genotype}.json",
+        tree = OUTDIR / "jev{genotype}" / "tree_jev{genotype}.nwk",
+        node_data = OUTDIR / "jev{genotype}" / "branch-lengths_jev{genotype}.json",
     params:
         coalescent = "const",
         date_inference = "marginal",
