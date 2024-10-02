@@ -41,7 +41,7 @@ genotype. Use auspice.us to view the trees.
 datasets:
   nextclade: "../nextclade_dataset/resources/nc_dataset/"
   backbone: "resources/backbone/"
-  austrakka: "PATH/TO/SEQUENCES/" # <- change this value!
+  austrakka: "resources/examples/" # <- change this path
  ```
  - Activate conda env:
  ```
